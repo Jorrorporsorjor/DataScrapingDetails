@@ -1,0 +1,356 @@
+{
+  "generatedAt": "2025-10-16T07:09:56.975Z",
+  "totalKeywords": 13,
+  "totalOccurrences": 42,
+  "summary": {
+    "byCategory": {
+      "beer": {
+        "count": 17,
+        "keywords": [
+          "เบียร์",
+          "ขายเบียร์"
+        ]
+      },
+      "brands": {
+        "count": 5,
+        "keywords": [
+          "ช้าง"
+        ]
+      },
+      "selling": {
+        "count": 8,
+        "keywords": [
+          "ขาย",
+          "พร้อมส่ง",
+          "สั่งได้"
+        ]
+      },
+      "price": {
+        "count": 7,
+        "keywords": [
+          "ราคา",
+          "โปรโมชั่น",
+          "บาท"
+        ]
+      },
+      "delivery": {
+        "count": 2,
+        "keywords": [
+          "จัดส่ง"
+        ]
+      },
+      "contact": {
+        "count": 3,
+        "keywords": [
+          "โทร",
+          "สนใจ",
+          "ไลน์"
+        ]
+      }
+    }
+  },
+  "keywords": [
+    {
+      "keyword": "เบียร์",
+      "category": "beer",
+      "count": 16,
+      "groups": [
+        "สมาคมคนชอบกินเบียร์ เเห่งประเทศไทย",
+        "เบียร์ช้างและเบียร์ลีโอ",
+        "เหล้า เบียร์ ราคาส่งพัทยา",
+        "เบียร์ชวนดู Look at GHOST",
+        "สังคมคนกินเหล้ากินเบียร์",
+        "ลงงาน STAFF EVENT Concert ขายเบียร์ เรท 1000 ขึ้นไปเท่านั้น งานที่ห้ามลบทิ้",
+        "แลกเปลี่ยน และ ซื้อขาย อุปกรณ์ทำคราฟเบียร์ทุกชนิด By-AiiboTH",
+        "ซื้อ-ขาย เบียร์ช้าง"
+      ],
+      "groupCount": 8,
+      "examples": [
+        {
+          "author": "Unknown",
+          "preview": "หาลานเบียร์สดร่วมงานหลวงปู่ปานอำเภอบางบ่อ25-31ตุลา...",
+          "postLink": "https://www.facebook.com/groups/390593440085700/posts/818351677309872/?__cft__[0]=AZUnA3vy6uAJfJ0-wc9ZsF-FUXRhH4iYZWsKY96OWmLWdyFLFqIpv_DD14sWmdKpS0jxuUvhWF49DrvO1zO6RpheSwIl1GZNSgEA_3fKrfeccu_RPM4sqU-2YJh4FGD1OKlZl1-CsD2pSbvTzXX8UfV73e-nkyPQHfEO2R1cYn2PC_oJgWwoO8DJAV6M9PL286A&__tn__=%2CO%2CP-R",
+          "groupName": "สมาคมคนชอบกินเบียร์ เเห่งประเทศไทย"
+        },
+        {
+          "author": "Unknown",
+          "preview": "กินด้วยดิกินเบียร์ด้วยอยากกินเบียร์กินเผื่อบ้างเด้อกินเผื่อด้วย...",
+          "postLink": "https://www.facebook.com/groups/390593440085700/posts/390595040085540/?__cft__[0]=AZVL9zdqnHIMkhWKSVRBMMge8c9c6Zc0ow2E89Z3jUo2qs2Aty4ojvjoos9kT5Wnh43dfMgBj6ZpnnQ0lFTZP0-SjcjLPCM-ooPw6C2yNQqGx_RVU6R3NAWTcmk-Yp7BMPHbG9EJODzhQCQnCAPyCBdYJOZIA9cZjq5saT01osJZ8dgAsfqkWrpbZ92TWC3ks-M&__tn__=%2CO%2CP-R",
+          "groupName": "สมาคมคนชอบกินเบียร์ เเห่งประเทศไทย"
+        },
+        {
+          "author": "แทนคุณ นานสกุล",
+          "preview": "กินด้วยดิกินเบียร์ด้วยอยากกินเบียร์กินเผื่อบ้างเด้อกินเผื่อด้วย...",
+          "postLink": "https://www.facebook.com/groups/390593440085700/posts/390595040085540/?comment_id=413754217769622&__cft__[0]=AZVL9zdqnHIMkhWKSVRBMMge8c9c6Zc0ow2E89Z3jUo2qs2Aty4ojvjoos9kT5Wnh43dfMgBj6ZpnnQ0lFTZP0-SjcjLPCM-ooPw6C2yNQqGx_RVU6R3NAWTcmk-Yp7BMPHbG9EJODzhQCQnCAPyCBdYJOZIA9cZjq5saT01osJZ8dgAsfqkWrpbZ92TWC3ks-M&__tn__=R-R",
+          "groupName": "สมาคมคนชอบกินเบียร์ เเห่งประเทศไทย"
+        }
+      ]
+    },
+    {
+      "keyword": "ช้าง",
+      "category": "brands",
+      "count": 5,
+      "groups": [
+        "เบียร์ช้างและเบียร์ลีโอ",
+        "ซื้อ-ขาย เบียร์ช้าง"
+      ],
+      "groupCount": 2,
+      "examples": [
+        {
+          "author": "Unknown",
+          "preview": "หาเซล ช้าง สิงค์ ร้านยุบางบอน 0860964679...",
+          "postLink": "https://www.facebook.com/groups/1442901699270299/posts/4585629551664149/?__cft__[0]=AZXguxXRCmzBz-JxlqcDcyKAEt3ORNY91DQMGTZySGy5Vo35gKvFgIniN08uaajjHSt-466ZD934BfZTKAG6lsV6iVmD4rpnngsiJc95OqmNeZMSQBC3cOIQER-ohOCc0gG7UB56H1y-SCK8qQ8i-NRJRWBLb__fzq06vJL9CB_lIEi9kI3kimANrVix1PSS-nCn1SqVPpLZOHXlu5s6adzO&__tn__=%2CO%2CP-R",
+          "groupName": "เบียร์ช้างและเบียร์ลีโอ"
+        },
+        {
+          "author": "Unknown",
+          "preview": "ไม่ทราบว่าเบียร์ช้างทำมัยไม่สะอาดเลย...",
+          "postLink": "https://www.facebook.com/groups/1442901699270299/posts/1466544510239351/?__cft__[0]=AZWjwKMEj0od0cqBDXsY125k0ydsbq03ogBPBHenu2yVX3G21HTaGsk3a0Oua6P893S18vzSqcW4QGfi2CrIR22-noLEEypNwhcSctgvYyhdJMXIVSS4JK_CC6yrpTaRgxE99Cijkoo7Cvr6AUayR-nXZTCrimujzE5t8BMvvNUE8j3BtZk6rDPEtubKhW2UGojTCtPBoSyRLnL03ahlm2kW&__tn__=%2CO%2CP-R",
+          "groupName": "เบียร์ช้างและเบียร์ลีโอ"
+        },
+        {
+          "author": "วิไลวรรณ ทันสมัย",
+          "preview": "ไม่ทราบว่าเบียร์ช้างทำมัยไม่สะอาดเลย...",
+          "postLink": "https://www.facebook.com/groups/1442901699270299/posts/1466544510239351/?comment_id=4569352113291893&__cft__[0]=AZWjwKMEj0od0cqBDXsY125k0ydsbq03ogBPBHenu2yVX3G21HTaGsk3a0Oua6P893S18vzSqcW4QGfi2CrIR22-noLEEypNwhcSctgvYyhdJMXIVSS4JK_CC6yrpTaRgxE99Cijkoo7Cvr6AUayR-nXZTCrimujzE5t8BMvvNUE8j3BtZk6rDPEtubKhW2UGojTCtPBoSyRLnL03ahlm2kW&__tn__=R-R",
+          "groupName": "เบียร์ช้างและเบียร์ลีโอ"
+        }
+      ]
+    },
+    {
+      "keyword": "ขาย",
+      "category": "selling",
+      "count": 5,
+      "groups": [
+        "ร้านเหล้า ผับ บาร์ ลานเบียร์ ปราจีนบุรี",
+        "เหล้า เบียร์ ราคาส่งพัทยา",
+        "เบียร์ชวนดู Look at GHOST",
+        "ลงงาน STAFF EVENT Concert ขายเบียร์ เรท 1000 ขึ้นไปเท่านั้น งานที่ห้ามลบทิ้"
+      ],
+      "groupCount": 4,
+      "examples": [
+        {
+          "author": "Unknown",
+          "preview": "ขออนุญาตขายป้ายไฟ ป้ายไฟแต่งร้าน ป้ายไฟแต่งบ้าน #... ดูเพิ่มเติม...",
+          "postLink": "https://www.facebook.com/groups/221580744890868/posts/1984839611898297/?__cft__[0]=AZXPLkfz3dNKG56As_ki52VfhdVokWWMnlaaEbUssy0SiXjTBNewPD-Cd60dff42QTdDJ5zuh3ok987OYCAzm4Z2ikKjlXFX7TOj9mxtVUaf-WiFFMn2CBZuYqaXA-OFOsRUCPNbESj9QpiMOF-WSPMvhWYXw8A57aiBkHtfJL7HSyOiPk0xqIdUMfepKovyfqKanRERnzYXUrZ8Mv5O7Eeq&__tn__=%2CO%2CP-R",
+          "groupName": "ร้านเหล้า ผับ บาร์ ลานเบียร์ ปราจีนบุรี"
+        },
+        {
+          "author": "Unknown",
+          "preview": "ขายครับ black ธรรมดาหน้าร้านขาย 1,399 ผมขาย 800 บาทผมไม่ได้ทาน ส่วนจอนนี่ walker pro หน้าร้านขาย 200...",
+          "postLink": "https://www.facebook.com/groups/1174807287282028/posts/1180788980017192/?__cft__[0]=AZUpo8T9FUgZUzm41v1bdemGcXellbhnvtK4hN5rrlCEaQ-djrGi1oMcB2Q4GMBciRpnws96Equ6_ycEko-e-eGGUKEPuVtkP0XbrVwYMiccI9YTzVa0-qkugWIFjHfmwYBRFfP4Agv5ECJoOYSHybNH5WgP8SXqep5RlG9hiAw1rRB8OK9eJEpfE2opFI1ghKXwsIaWLbTOG1UPRL7qFWy3&__tn__=%2CO%2CP-R",
+          "groupName": "เหล้า เบียร์ ราคาส่งพัทยา"
+        },
+        {
+          "author": "Unknown",
+          "preview": "พร้อมส่งครับในพัทยา สั่งตั้งแต่ 1ลังส่งหมด ร้านบาเบียรฺ์ ร้านอาหาร ร้านเนื้อย่าง หรือร้านค้าทั่วไป น...",
+          "postLink": "https://www.facebook.com/groups/1174807287282028/posts/1174818403947583/?__cft__[0]=AZVL7zbEuD3uM4UeP58M8ANAQA_XX1VAsgJrscQEA_i7NqZVa6YZ6MMpqzVoIQYPXqbuotrzGYYjqv9njjDtMupkYYLn-LhFj7Wxk3TP8hxBVDWD9Rd7vmoySorSW9xBU57gEJBMr9N7L4gw-dFtMHy2sveKYnufAYn5h4t5I5nyTVA0z9f7xiHq524WUBgXzxEJByNUTiyYlKubN0hmGNth&__tn__=%2CO%2CP-R",
+          "groupName": "เหล้า เบียร์ ราคาส่งพัทยา"
+        }
+      ]
+    },
+    {
+      "keyword": "ราคา",
+      "category": "price",
+      "count": 4,
+      "groups": [
+        "ร้านเหล้า ผับ บาร์ ลานเบียร์ ปราจีนบุรี",
+        "เหล้า เบียร์ ราคาส่งพัทยา",
+        "แลกเปลี่ยน และ ซื้อขาย อุปกรณ์ทำคราฟเบียร์ทุกชนิด By-AiiboTH"
+      ],
+      "groupCount": 3,
+      "examples": [
+        {
+          "author": "Unknown",
+          "preview": "โปรแกรมร้านเหล้า/ร้านอาหาร Pub&Restaurant-ไม่ต้องเช่ารายเดือน-ซื้อขาดลิขสิทธิ์เป็นของเรา*ราคาเริ่มต้...",
+          "postLink": "https://www.facebook.com/groups/221580744890868/posts/1961301147585477/?__cft__[0]=AZVPxdQG2nDTTl7j24pXptIe57HXfdHNmKvrMfaTa4HqCaib-JYQQ40Zd-EwFCe6GtoTZYeTA1fa4rCfikgIkjuPHu5-jpplTlVzJSZuzocWHK32mY76gDyTvNIDg-NmRmtdbfbhDfkMXyazsXRI-1VMUmdnZ4N4_oGjBuLl5q84omuLGLLpvVg5FAiwDItDyGiDLAtuwNd2RTfcwB6BcwJcDFvNwF6HxKMmqHj3os2-DSvnBXHEdq_G-b06zo5DbPVYjxOotDxJEJKBUoWcH9GI&__tn__=%2CO%2CP-R",
+          "groupName": "ร้านเหล้า ผับ บาร์ ลานเบียร์ ปราจีนบุรี"
+        },
+        {
+          "author": "Unknown",
+          "preview": "เหล้าเบียร์ ราคาส่ง พัทยาสั่งได้ครับ จัดส่งฟรี  โปรโมรชั่นเดือนนี้...",
+          "postLink": "https://www.facebook.com/groups/1174807287282028/posts/1184157703013653/?__cft__[0]=AZXT5_ai0zcuGH0jC3A4kBVtIqcFRSsyF6R5z2-84ejbJxrfPUSwSFwNWxjeFZQX5m7PG4d1B_9-K2Q1Qk0xs55B4JQygDTSG6LERLyJrNGuuKTD0HnmG5BTLLek6xQpRIMDNoTrh3MbfjpuHHYxWlyGKIakvcOemrCdNAn2aUPoZjv3nSydsvprfdgtnSdtwR8_3T1J_nabvS1JHs6h0DZ5&__tn__=%2CO%2CP-R",
+          "groupName": "เหล้า เบียร์ ราคาส่งพัทยา"
+        },
+        {
+          "author": "Unknown",
+          "preview": "พร้อมส่งครับในพัทยา สั่งตั้งแต่ 1ลังส่งหมด ร้านบาเบียรฺ์ ร้านอาหาร ร้านเนื้อย่าง หรือร้านค้าทั่วไป น...",
+          "postLink": "https://www.facebook.com/groups/1174807287282028/posts/1174818403947583/?__cft__[0]=AZVL7zbEuD3uM4UeP58M8ANAQA_XX1VAsgJrscQEA_i7NqZVa6YZ6MMpqzVoIQYPXqbuotrzGYYjqv9njjDtMupkYYLn-LhFj7Wxk3TP8hxBVDWD9Rd7vmoySorSW9xBU57gEJBMr9N7L4gw-dFtMHy2sveKYnufAYn5h4t5I5nyTVA0z9f7xiHq524WUBgXzxEJByNUTiyYlKubN0hmGNth&__tn__=%2CO%2CP-R",
+          "groupName": "เหล้า เบียร์ ราคาส่งพัทยา"
+        }
+      ]
+    },
+    {
+      "keyword": "โปรโมชั่น",
+      "category": "price",
+      "count": 2,
+      "groups": [
+        "สมาคมคนชอบกินเบียร์ เเห่งประเทศไทย",
+        "ร้านเหล้า ผับ บาร์ ลานเบียร์ ปราจีนบุรี"
+      ],
+      "groupCount": 2,
+      "examples": [
+        {
+          "author": "Unknown",
+          "preview": "ขออนุญาตแนะนำร้านอาหารบรรยากาศดี ท่ามกลางใต้ต้นก้ามปูขนาดใหญ่อายุกว่าร้อยปีที่พาร์คสาทร เรสเตอรองท์ ...",
+          "postLink": "https://www.facebook.com/groups/390593440085700/posts/788976233580750/?__cft__[0]=AZVm46fatE0HvNAIWrikJ6kvF2qED6PXONKENWVNE0lOU9-PknBl9s1MozW69TMrlhvH7zV3yzfvJJKeHlglluMedABMoj-Oq0tqOEp3LpM-Kt0b6Ex4c5_oS-bphZ9RXOTaB2vEejHaj7-tdpSxr761JFWimSsalNnnQ6dDwKSCU2VL6byxIGGIuyZDM1FezsjfayiUPhstKBHbc-cYKrlKkKByxhgvQwnLxuEknfqgtg&__tn__=%2CO%2CP-R",
+          "groupName": "สมาคมคนชอบกินเบียร์ เเห่งประเทศไทย"
+        },
+        {
+          "author": "Unknown",
+          "preview": "โปรแกรมร้านเหล้า/ร้านอาหาร Pub&Restaurant-ไม่ต้องเช่ารายเดือน-ซื้อขาดลิขสิทธิ์เป็นของเรา*ราคาเริ่มต้...",
+          "postLink": "https://www.facebook.com/groups/221580744890868/posts/1961301147585477/?__cft__[0]=AZVPxdQG2nDTTl7j24pXptIe57HXfdHNmKvrMfaTa4HqCaib-JYQQ40Zd-EwFCe6GtoTZYeTA1fa4rCfikgIkjuPHu5-jpplTlVzJSZuzocWHK32mY76gDyTvNIDg-NmRmtdbfbhDfkMXyazsXRI-1VMUmdnZ4N4_oGjBuLl5q84omuLGLLpvVg5FAiwDItDyGiDLAtuwNd2RTfcwB6BcwJcDFvNwF6HxKMmqHj3os2-DSvnBXHEdq_G-b06zo5DbPVYjxOotDxJEJKBUoWcH9GI&__tn__=%2CO%2CP-R",
+          "groupName": "ร้านเหล้า ผับ บาร์ ลานเบียร์ ปราจีนบุรี"
+        }
+      ]
+    },
+    {
+      "keyword": "จัดส่ง",
+      "category": "delivery",
+      "count": 2,
+      "groups": [
+        "ร้านเหล้า ผับ บาร์ ลานเบียร์ ปราจีนบุรี",
+        "เหล้า เบียร์ ราคาส่งพัทยา"
+      ],
+      "groupCount": 2,
+      "examples": [
+        {
+          "author": "Unknown",
+          "preview": "เปิดรับออเดอร์ พร้อมจัดส่งภายใน 25/12/2563 เท่านั้นจ้า...",
+          "postLink": "https://www.facebook.com/groups/221580744890868/posts/1244828682566064/?__cft__[0]=AZXxs8yzdTr0Lm-gWaj8iyOwoOSdflMRry3cBGQla-Pkt2OG4kTWnMgc4w_laWktsP6TlLj3Cfrd9qDgt5f2GU5eilXdLafM1bl6isQhigI0VmA90jZznMUMrQIxz4CBm_kU8A_KdlFcgkvj8Kafyk_McG1DN03lQXXYVHa-4-Pj4wIu5muqdFesP1SnTdhXvfm3G4-YDbAbQsJRNXSI--o5DoA5upQcoHLPLrnstAwawJ6005CpnBRjwfaXZ4h2BetPHWj9Rb5IXyrsYJ7729c9&__tn__=%2CO%2CP-R",
+          "groupName": "ร้านเหล้า ผับ บาร์ ลานเบียร์ ปราจีนบุรี"
+        },
+        {
+          "author": "Unknown",
+          "preview": "เหล้าเบียร์ ราคาส่ง พัทยาสั่งได้ครับ จัดส่งฟรี  โปรโมรชั่นเดือนนี้...",
+          "postLink": "https://www.facebook.com/groups/1174807287282028/posts/1184157703013653/?__cft__[0]=AZXT5_ai0zcuGH0jC3A4kBVtIqcFRSsyF6R5z2-84ejbJxrfPUSwSFwNWxjeFZQX5m7PG4d1B_9-K2Q1Qk0xs55B4JQygDTSG6LERLyJrNGuuKTD0HnmG5BTLLek6xQpRIMDNoTrh3MbfjpuHHYxWlyGKIakvcOemrCdNAn2aUPoZjv3nSydsvprfdgtnSdtwR8_3T1J_nabvS1JHs6h0DZ5&__tn__=%2CO%2CP-R",
+          "groupName": "เหล้า เบียร์ ราคาส่งพัทยา"
+        }
+      ]
+    },
+    {
+      "keyword": "พร้อมส่ง",
+      "category": "selling",
+      "count": 2,
+      "groups": [
+        "เหล้า เบียร์ ราคาส่งพัทยา"
+      ],
+      "groupCount": 1,
+      "examples": [
+        {
+          "author": "Unknown",
+          "preview": "พร้อมส่งครับในพัทยา สั่งตั้งแต่ 1ลังส่งหมด ร้านบาเบียรฺ์ ร้านอาหาร ร้านเนื้อย่าง หรือร้านค้าทั่วไป น...",
+          "postLink": "https://www.facebook.com/groups/1174807287282028/posts/1174818403947583/?__cft__[0]=AZVL7zbEuD3uM4UeP58M8ANAQA_XX1VAsgJrscQEA_i7NqZVa6YZ6MMpqzVoIQYPXqbuotrzGYYjqv9njjDtMupkYYLn-LhFj7Wxk3TP8hxBVDWD9Rd7vmoySorSW9xBU57gEJBMr9N7L4gw-dFtMHy2sveKYnufAYn5h4t5I5nyTVA0z9f7xiHq524WUBgXzxEJByNUTiyYlKubN0hmGNth&__tn__=%2CO%2CP-R",
+          "groupName": "เหล้า เบียร์ ราคาส่งพัทยา"
+        },
+        {
+          "author": "Unknown",
+          "preview": "พร้อมส่งครับในพัทยา สั่งตั้งแต่ 1ลังส่งหมด ร้านบาเบียรฺ์ ร้านอาหาร ร้านเนื้อย่าง หรือร้านค้าทั่วไป น...",
+          "postLink": "https://www.facebook.com/groups/1174807287282028/posts/1174818403947583/?__cft__[0]=AZVL7zbEuD3uM4UeP58M8ANAQA_XX1VAsgJrscQEA_i7NqZVa6YZ6MMpqzVoIQYPXqbuotrzGYYjqv9njjDtMupkYYLn-LhFj7Wxk3TP8hxBVDWD9Rd7vmoySorSW9xBU57gEJBMr9N7L4gw-dFtMHy2sveKYnufAYn5h4t5I5nyTVA0z9f7xiHq524WUBgXzxEJByNUTiyYlKubN0hmGNth&__tn__=%2CO%2CP-R",
+          "groupName": "เหล้า เบียร์ ราคาส่งพัทยา"
+        }
+      ]
+    },
+    {
+      "keyword": "สั่งได้",
+      "category": "selling",
+      "count": 1,
+      "groups": [
+        "เหล้า เบียร์ ราคาส่งพัทยา"
+      ],
+      "groupCount": 1,
+      "examples": [
+        {
+          "author": "Unknown",
+          "preview": "เหล้าเบียร์ ราคาส่ง พัทยาสั่งได้ครับ จัดส่งฟรี  โปรโมรชั่นเดือนนี้...",
+          "postLink": "https://www.facebook.com/groups/1174807287282028/posts/1184157703013653/?__cft__[0]=AZXT5_ai0zcuGH0jC3A4kBVtIqcFRSsyF6R5z2-84ejbJxrfPUSwSFwNWxjeFZQX5m7PG4d1B_9-K2Q1Qk0xs55B4JQygDTSG6LERLyJrNGuuKTD0HnmG5BTLLek6xQpRIMDNoTrh3MbfjpuHHYxWlyGKIakvcOemrCdNAn2aUPoZjv3nSydsvprfdgtnSdtwR8_3T1J_nabvS1JHs6h0DZ5&__tn__=%2CO%2CP-R",
+          "groupName": "เหล้า เบียร์ ราคาส่งพัทยา"
+        }
+      ]
+    },
+    {
+      "keyword": "บาท",
+      "category": "price",
+      "count": 1,
+      "groups": [
+        "เหล้า เบียร์ ราคาส่งพัทยา"
+      ],
+      "groupCount": 1,
+      "examples": [
+        {
+          "author": "Unknown",
+          "preview": "ขายครับ black ธรรมดาหน้าร้านขาย 1,399 ผมขาย 800 บาทผมไม่ได้ทาน ส่วนจอนนี่ walker pro หน้าร้านขาย 200...",
+          "postLink": "https://www.facebook.com/groups/1174807287282028/posts/1180788980017192/?__cft__[0]=AZUpo8T9FUgZUzm41v1bdemGcXellbhnvtK4hN5rrlCEaQ-djrGi1oMcB2Q4GMBciRpnws96Equ6_ycEko-e-eGGUKEPuVtkP0XbrVwYMiccI9YTzVa0-qkugWIFjHfmwYBRFfP4Agv5ECJoOYSHybNH5WgP8SXqep5RlG9hiAw1rRB8OK9eJEpfE2opFI1ghKXwsIaWLbTOG1UPRL7qFWy3&__tn__=%2CO%2CP-R",
+          "groupName": "เหล้า เบียร์ ราคาส่งพัทยา"
+        }
+      ]
+    },
+    {
+      "keyword": "โทร",
+      "category": "contact",
+      "count": 1,
+      "groups": [
+        "เหล้า เบียร์ ราคาส่งพัทยา"
+      ],
+      "groupCount": 1,
+      "examples": [
+        {
+          "author": "Unknown",
+          "preview": "ขายครับ black ธรรมดาหน้าร้านขาย 1,399 ผมขาย 800 บาทผมไม่ได้ทาน ส่วนจอนนี่ walker pro หน้าร้านขาย 200...",
+          "postLink": "https://www.facebook.com/groups/1174807287282028/posts/1180788980017192/?__cft__[0]=AZUpo8T9FUgZUzm41v1bdemGcXellbhnvtK4hN5rrlCEaQ-djrGi1oMcB2Q4GMBciRpnws96Equ6_ycEko-e-eGGUKEPuVtkP0XbrVwYMiccI9YTzVa0-qkugWIFjHfmwYBRFfP4Agv5ECJoOYSHybNH5WgP8SXqep5RlG9hiAw1rRB8OK9eJEpfE2opFI1ghKXwsIaWLbTOG1UPRL7qFWy3&__tn__=%2CO%2CP-R",
+          "groupName": "เหล้า เบียร์ ราคาส่งพัทยา"
+        }
+      ]
+    },
+    {
+      "keyword": "สนใจ",
+      "category": "contact",
+      "count": 1,
+      "groups": [
+        "เหล้า เบียร์ ราคาส่งพัทยา"
+      ],
+      "groupCount": 1,
+      "examples": [
+        {
+          "author": "Unknown",
+          "preview": "ขายครับ black ธรรมดาหน้าร้านขาย 1,399 ผมขาย 800 บาทผมไม่ได้ทาน ส่วนจอนนี่ walker pro หน้าร้านขาย 200...",
+          "postLink": "https://www.facebook.com/groups/1174807287282028/posts/1180788980017192/?__cft__[0]=AZUpo8T9FUgZUzm41v1bdemGcXellbhnvtK4hN5rrlCEaQ-djrGi1oMcB2Q4GMBciRpnws96Equ6_ycEko-e-eGGUKEPuVtkP0XbrVwYMiccI9YTzVa0-qkugWIFjHfmwYBRFfP4Agv5ECJoOYSHybNH5WgP8SXqep5RlG9hiAw1rRB8OK9eJEpfE2opFI1ghKXwsIaWLbTOG1UPRL7qFWy3&__tn__=%2CO%2CP-R",
+          "groupName": "เหล้า เบียร์ ราคาส่งพัทยา"
+        }
+      ]
+    },
+    {
+      "keyword": "ไลน์",
+      "category": "contact",
+      "count": 1,
+      "groups": [
+        "เหล้า เบียร์ ราคาส่งพัทยา"
+      ],
+      "groupCount": 1,
+      "examples": [
+        {
+          "author": "Unknown",
+          "preview": "พร้อมส่งครับในพัทยา สั่งตั้งแต่ 1ลังส่งหมด ร้านบาเบียรฺ์ ร้านอาหาร ร้านเนื้อย่าง หรือร้านค้าทั่วไป น...",
+          "postLink": "https://www.facebook.com/groups/1174807287282028/posts/1174818403947583/?__cft__[0]=AZVL7zbEuD3uM4UeP58M8ANAQA_XX1VAsgJrscQEA_i7NqZVa6YZ6MMpqzVoIQYPXqbuotrzGYYjqv9njjDtMupkYYLn-LhFj7Wxk3TP8hxBVDWD9Rd7vmoySorSW9xBU57gEJBMr9N7L4gw-dFtMHy2sveKYnufAYn5h4t5I5nyTVA0z9f7xiHq524WUBgXzxEJByNUTiyYlKubN0hmGNth&__tn__=%2CO%2CP-R",
+          "groupName": "เหล้า เบียร์ ราคาส่งพัทยา"
+        }
+      ]
+    },
+    {
+      "keyword": "ขายเบียร์",
+      "category": "beer",
+      "count": 1,
+      "groups": [
+        "ลงงาน STAFF EVENT Concert ขายเบียร์ เรท 1000 ขึ้นไปเท่านั้น งานที่ห้ามลบทิ้"
+      ],
+      "groupCount": 1,
+      "examples": [
+        {
+          "author": "Unknown",
+          "preview": "วันนี้เป็นวันครบรอบ 2 ปีของ ลงงาน STAFF EVENT Concert ขายเบียร์ เรท 1000 ขึ้นไปเท่านั้น งานที่ห้ามลบ...",
+          "postLink": "https://www.facebook.com/groups/302625495468093/posts/756825066714798/?__cft__[0]=AZUvsri2OK8gCabZgmjvgFndF53_FuJEMO9XwyS5a7TxnixI4P4Euzq_-k31J2EXrl7r_pMxbEgYYNKvh0AQm_Egxkeq-Dy1caCzI5KjUjv9ofNnaHbSqpMuO0u3lnIjduAk8iouQSLnF6uIF-Dly-P7xTj8EiniFPWj0pLg5W0ssqzCFeWM35K3DGETL8H5UJRnYUjSYExOpToGr-37s3Jj&__tn__=%2CO%2CP-R",
+          "groupName": "ลงงาน STAFF EVENT Concert ขายเบียร์ เรท 1000 ขึ้นไปเท่านั้น งานที่ห้ามลบทิ้"
+        }
+      ]
+    }
+  ]
+}

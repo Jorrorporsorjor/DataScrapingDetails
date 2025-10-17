@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  docker1:
+    build: ./docker1
+    volumes:
+      - ./shared:/usr/src/app/shared
+    ports:
+      - "3000:3000"
+
+  docker2:
+    build: ./docker2
+    volumes:
+      - ./shared:/usr/src/app/output
+    ports:
+      - "4000:4000"
