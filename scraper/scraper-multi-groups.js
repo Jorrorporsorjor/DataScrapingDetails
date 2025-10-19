@@ -20,7 +20,7 @@ class TaskQueue {
         resolve,
         reject,
         retries: 0,
-        maxRetries: 2
+        maxRetries: 1 // ลดจาก 2 เป็น 1 เพื่อลด timeout
       });
       this.process();
     });
@@ -271,7 +271,7 @@ const analyzeKeywords = (post) => {
   return foundKeywords;
 };
 
-const extractPostsWithTimeout = async (page, timeout = 15000) => {
+const extractPostsWithTimeout = async (page, timeout = 30000) => { // เพิ่มเป็น 30 วินาที
   try {
     const posts = await Promise.race([
       page.evaluate(() => {
@@ -319,7 +319,7 @@ const extractPostsWithTimeout = async (page, timeout = 15000) => {
             if (!text || text.length < 20) return;
 
             let author = 'Unknown';
-            const authorElement = post.querySelector('a[role="link"] span, h4 span, strong span');
+            const authorElement = post.querySelector('a[role="link"] b span');
             if (authorElement) {
               const name = authorElement.innerText.trim();
               if (name && name.length > 1 && !name.includes('•') && !name.includes('ชั่วโมง')) {
@@ -394,11 +394,16 @@ async function scrapeGroupWithQueue(page, group, groupIndex, totalGroups, keywor
   console.log(`🔗 ${GROUP_URL}`);
   console.log('='.repeat(60));
   
-  await page.goto(GROUP_URL, { 
-    waitUntil: 'domcontentloaded',
-    timeout: 30000 
-  });
-  await randomDelay(3000, 5000);
+  try {
+    await page.goto(GROUP_URL, { 
+      waitUntil: 'domcontentloaded',
+      timeout: 60000  // เพิ่มเป็น 60 วินาที
+    });
+    await randomDelay(3000, 5000);
+  } catch (error) {
+    console.error(`❌ ไม่สามารถเข้าสู่กลุ่มได้: ${error.message}`);
+    throw new Error(`Navigation failed: ${error.message}`);
+  }
 
   try {
     await page.evaluate(() => {
@@ -408,7 +413,7 @@ async function scrapeGroupWithQueue(page, group, groupIndex, totalGroups, keywor
   } catch (e) {}
 
   const allPosts = [];
-  const maxScrollTimes = 4;
+  const maxScrollTimes = 3; // ลดจาก 4 เป็น 3 เพื่อประหยัดเวลา
   let previousPostCount = 0;
   let noNewPostsCount = 0;
 
@@ -419,7 +424,7 @@ async function scrapeGroupWithQueue(page, group, groupIndex, totalGroups, keywor
     
     await randomDelay(2000, 3000);
     
-    const posts = await extractPostsWithTimeout(page, 15000);
+    const posts = await extractPostsWithTimeout(page, 30000); // เพิ่มเป็น 30 วินาที
 
     posts.forEach(post => {
       const phones = extractPhoneNumbers(post.text);
@@ -656,76 +661,6 @@ async function saveResults(queue, keywordStats) {
   }
 }
 
-async function scrapeCycle(page, queue) {
-  console.log('\n' + '🔄'.repeat(30));
-  console.log('🔄 เริ่มต้นรอบการดึงข้อมูลใหม่');
-  console.log('🔄'.repeat(30));
-  console.log(`⏰ เวลา: ${new Date().toLocaleString('th-TH')}\n`);
-
-  queue.reset();
-  
-  let groups = [];
-  try {
-  console.log('🌐 กำลังโหลด groups.json จาก API...');
-  const res = await axios.get('http://localhost:3000/app/groups.json');
-  groups = res.data;
-  groups = groups.slice(1);
-  console.log(`📋 โหลดข้อมูล ${groups.length} กลุ่มจาก API`);
-  groups.forEach((g, i) => console.log(`   ${i + 1}. ${g.name}`));
-} catch (error) {
-  console.error('❌ โหลด groups.json จาก API ไม่สำเร็จ:', error.message);
-  return false;
-}
-
-  const keywordStats = {};
-
-  console.log('\n🚀 เริ่มเพิ่มงานเข้า Queue');
-  for (let i = 0; i < groups.length; i++) {
-    queue.add(
-      () => scrapeGroupWithQueue(page, groups[i], i, groups.length, keywordStats),
-      { 
-        name: groups[i].name,
-        url: groups[i].url,
-        index: i + 1,
-        total: groups.length
-      }
-    );
-  }
-
-  console.log('⏳ รอให้ Queue ประมวลผลทุกกลุ่ม...\n');
-  await queue.waitForCompletion();
-
-  const queueSummary = queue.getSummary();
-  console.log('\n' + '='.repeat(60));
-  console.log('📊 สรุปผล Queue System');
-  console.log('='.repeat(60));
-  console.log(`✅ สำเร็จ: ${queueSummary.successful} กลุ่ม`);
-  console.log(`❌ ล้มเหลว: ${queueSummary.failed} กลุ่ม`);
-  console.log(`📈 อัตราความสำเร็จ: ${queueSummary.successRate}`);
-
-  await saveResults(queue, keywordStats);
-
-  console.log('\n✅ เสร็จสิ้นรอบการทำงานนี้');
-  console.log('📁 ไฟล์ที่สร้าง:');
-  console.log('   - ./output/all_posts_data.json');
-  console.log('   - ./output/success_keyword.json');
-  if (queue.errors.length > 0) {
-    console.log('   - ./output/failed_groups.json');
-  }
-
-  return true;
-}
-
-async function waitAndLoop(seconds) {
-  console.log(`\n⏱️  รอ ${seconds} วินาที ก่อนเริ่มรอบใหม่...`);
-  for (let i = seconds; i > 0; i--) {
-    if (i % 10 === 0 || i <= 5) {
-      console.log(`   ⏰ เหลืออีก ${i} วินาที...`);
-    }
-    await new Promise(resolve => setTimeout(resolve, 1000));
-  }
-}
-
 async function scrapeFacebookGroup() {
   const browser = await puppeteer.launch({
     headless: true,
@@ -738,14 +673,14 @@ async function scrapeFacebookGroup() {
       '--disable-blink-features=AutomationControlled',
       '--window-size=1920,1080',
     ],
-    protocolTimeout: 60000,
+    protocolTimeout: 180000, // เพิ่มเป็น 3 นาที
   });
 
   try {
     const page = await browser.newPage();
     
-    page.setDefaultTimeout(30000);
-    page.setDefaultNavigationTimeout(30000);
+    page.setDefaultTimeout(60000); // เพิ่มเป็น 60 วินาที
+    page.setDefaultNavigationTimeout(60000); // เพิ่มเป็น 60 วินาที
     
     await page.evaluateOnNewDocument(() => {
       Object.defineProperty(navigator, 'webdriver', { get: () => false });
@@ -802,36 +737,68 @@ async function scrapeFacebookGroup() {
     console.log('✅ เข้าสู่ระบบสำเร็จ!\n');
 
     const queue = new TaskQueue(1);
+    
+    let groups = [];
+    try {
+      console.log('🌐 กำลังโหลด groups.json จาก API...');
+      const res = await axios.get('http://192.168.88.186:3002/app/groups.json');
+      groups = Array.isArray(res.data.groups) ? res.data.groups.slice(1) : [];
+      console.log(`📋 โหลดข้อมูล ${groups.length} กลุ่มจาก API`);
+      groups.forEach((g, i) => console.log(`   ${i + 1}. ${g.name}`));
+    } catch (error) {
+      console.error('❌ โหลด groups.json จาก API ไม่สำเร็จ:', error.message);
+      await browser.close();
+      process.exit(1);
+    }
 
-    let cycleCount = 1;
-    while (true) {
-      console.log(`\n${'🔁'.repeat(30)}`);
-      console.log(`🔁 รอบที่ ${cycleCount}`);
-      console.log('🔁'.repeat(30));
+    const keywordStats = {};
 
-      if (queue.isRunning()) {
-        console.log('⚠️  Queue กำลังทำงานอยู่ รอให้เสร็จก่อน...');
-        await queue.waitForCompletion();
-      }
+    console.log('\n🚀 เริ่มเพิ่มงานเข้า Queue');
+    for (let i = 0; i < groups.length; i++) {
+      queue.add(
+        () => scrapeGroupWithQueue(page, groups[i], i, groups.length, keywordStats),
+        { 
+          name: groups[i].name,
+          url: groups[i].url,
+          index: i + 1,
+          total: groups.length
+        }
+      );
+    }
 
-      const success = await scrapeCycle(page, queue);
+    console.log('⏳ รอให้ Queue ประมวลผลทุกกลุ่ม...\n');
+    await queue.waitForCompletion();
 
-      if (!success) {
-        console.log('❌ รอบนี้ล้มเหลว รอก่อนลองใหม่');
-      }
+    const queueSummary = queue.getSummary();
+    console.log('\n' + '='.repeat(60));
+    console.log('📊 สรุปผล Queue System');
+    console.log('='.repeat(60));
+    console.log(`✅ สำเร็จ: ${queueSummary.successful} กลุ่ม`);
+    console.log(`❌ ล้มเหลว: ${queueSummary.failed} กลุ่ม`);
+    console.log(`📈 อัตราความสำเร็จ: ${queueSummary.successRate}`);
 
-      cycleCount++;
+    await saveResults(queue, keywordStats);
 
-      await waitAndLoop(30);
+    console.log('\n✅ เสร็จสิ้นการทำงาน');
+    console.log('📁 ไฟล์ที่สร้าง:');
+    console.log('   - ./output/all_posts_data.json');
+    console.log('   - ./output/success_keyword.json');
+    if (queue.errors.length > 0) {
+      console.log('   - ./output/failed_groups.json');
     }
 
   } catch (error) {
     console.error('❌ เกิดข้อผิดพลาดร้ายแรง:', error.message);
     console.error(error.stack);
+    process.exit(1);
   } finally {
     await browser.close();
     console.log('\n✅ ปิดเบราว์เซอร์แล้ว');
   }
 }
 
-scrapeFacebookGroup().catch(console.error);
+// ✅ รันเพียงครั้งเดียวแล้วจบ (ไม่มี loop)
+scrapeFacebookGroup().catch(error => {
+  console.error('❌ Fatal Error:', error);
+  process.exit(1);
+});
