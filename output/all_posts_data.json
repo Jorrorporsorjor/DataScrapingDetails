@@ -1,61 +1,68 @@
 {
-  "scrapedAt": "2025-10-20T09:26:01.065Z",
+  "scrapedAt": "2025-10-20T10:12:36.920Z",
   "query": "เบียร์",
   "status": "partial",
   "queue": {
-    "total": 7,
-    "successful": 4,
-    "failed": 3,
-    "successRate": "57.14%"
+    "total": 13,
+    "successful": 6,
+    "failed": 7,
+    "successRate": "46.15%"
   },
   "summary": {
-    "totalPosts": 21,
-    "totalBeerPosts": 2,
+    "totalPosts": 12,
+    "totalBeerPosts": 3,
     "totalWithContact": 0,
-    "totalGroups": 8
+    "totalGroups": 10
   },
   "groups": [
     {
       "groupName": "หางาน Staff Pretty MC Event PC PG BA พนักงานประจำบูธ roadshow เชียร์เบียร์",
       "groupUrl": "https://www.facebook.com/groups/996304311268944/",
-      "scrapedAt": "2025-10-20T08:21:49.383Z",
+      "query": "เบียร์",
+      "scrapedAt": "2025-10-20T09:40:00.461Z",
       "totalPosts": 0,
       "beerRelatedPosts": 0,
       "statistics": {
         "withContact": 0,
         "completenessRate": 0
       },
-      "posts": []
+      "posts": [],
+      "lastUpdated": "2025-10-20T10:12:36.919Z"
     },
     {
       "groupName": "คนรักกระป๋องเบียร์ไทย-นอก และอื่นๆ",
       "groupUrl": "https://www.facebook.com/groups/899243496833153/",
-      "scrapedAt": "2025-10-20T08:22:11.324Z",
-      "totalPosts": 1,
+      "query": "เบียร์",
+      "scrapedAt": "2025-10-20T09:40:20.371Z",
+      "totalPosts": 0,
       "beerRelatedPosts": 0,
       "statistics": {
         "withContact": 0,
         "completenessRate": 0
       },
-      "posts": []
+      "posts": [],
+      "lastUpdated": "2025-10-20T10:12:36.920Z"
     },
     {
       "groupName": "งานเชียร์เบียร์ PG CT MC Event Sup By Dao",
       "groupUrl": "https://www.facebook.com/groups/1244441712750913/",
-      "scrapedAt": "2025-10-20T08:22:29.918Z",
-      "totalPosts": 1,
+      "query": "เบียร์",
+      "scrapedAt": "2025-10-20T09:40:39.803Z",
+      "totalPosts": 0,
       "beerRelatedPosts": 0,
       "statistics": {
         "withContact": 0,
         "completenessRate": 0
       },
-      "posts": []
+      "posts": [],
+      "lastUpdated": "2025-10-20T10:12:36.920Z"
     },
     {
       "groupName": "คราฟเบียร์ไทยและสุราก้าวหน้า",
       "groupUrl": "https://www.facebook.com/groups/788158899526864/",
-      "scrapedAt": "2025-10-20T08:26:37.770Z",
-      "totalPosts": 11,
+      "query": "เบียร์",
+      "scrapedAt": "2025-10-20T09:45:02.138Z",
+      "totalPosts": 1,
       "beerRelatedPosts": 1,
       "statistics": {
         "withContact": 0,
@@ -83,7 +90,8 @@
           },
           "timestamp": "2025-10-20T08:22:45.772Z"
         }
-      ]
+      ],
+      "lastUpdated": "2025-10-20T10:12:36.920Z"
     },
     {
       "groupName": "สมาคมคนชอบกินเบียร์ เเห่งประเทศไทย",
@@ -171,38 +179,137 @@
         }
       ],
       "lastUpdated": "2025-10-20T09:26:01.064Z"
+    },
+    {
+      "groupName": "อยากเลิกบุหรี่ เลิกเหล้าเบียร์",
+      "groupUrl": "https://www.facebook.com/groups/310815131034868/",
+      "query": "เบียร์",
+      "scrapedAt": "2025-10-20T09:51:55.924Z",
+      "totalPosts": 3,
+      "beerRelatedPosts": 1,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [
+        {
+          "author": "Halls",
+          "authorProfileLink": "https://www.facebook.com/groups/310815131034868/user/100071285670886/",
+          "text": "ฝากร้านด้วยนะคะ ร้านต้องบอกต่อจ้า  จัดส่งจริง ไม่มีบวกเพิ่มจ้า รับประกัน 100%   ... ดูเพิ่มเติม",
+          "postLink": "https://www.facebook.com/groups/310815131034868/posts/1124755336307506/?__cft__[0]=AZXdk4vN8OEST67lFN8xb8jaoy77J9qXjx_r3zcu7zsVEAm26BOu1q02cp7h3Iw8P7RuOp0YwOOtNroPy5_QAivCo3Fc2NsFGmBAQNw5dxPtJFZ-WM1mHknqcnYltBEbtdqthYAF3IfAeZCv1FFzMsv2WnRL5KQ3ybXMrKJiGBQORsQiqr9xJlGvQIHYBhZFTdFc7cVM0IW7SNngmGGmG8BNS1d9oL2P-44CsWjfRQN3LA&__tn__=%2CO%2CP-R",
+          "imageUrl": "https://scontent-bkk1-2.xx.fbcdn.net/v/t39.30808-6/531821640_122139508346802219_4497066269247413758_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=znzUWjSlB0QQ7kNvwFDz0at&_nc_oc=Adm9cAm9X0iUXqYYKzngJinsMFIUiCKoiBNabiq8GmeazBU2s0ptMFJccMqyEd8ktfQ&_nc_zt=23&_nc_ht=scontent-bkk1-2.xx&_nc_gid=NVm-GzlV31C8cRhuWL0xNg&oh=00_AfeyX3sQ86u8QVqHQJA-Gqo645MyxiE52UW29_KuAmkJiA&oe=68FBDE2B",
+          "postTime": "ไม่ระบุ",
+          "rawTimestamp": "2025-10-20T09:48:37.746Z",
+          "query": "เบียร์",
+          "contact": {
+            "phones": [],
+            "lineIds": [],
+            "hasContact": false
+          },
+          "productInfo": {
+            "prices": [],
+            "beerBrands": [],
+            "locations": [],
+            "deliveryMethods": [
+              "จัดส่ง"
+            ]
+          },
+          "keywords": [
+            {
+              "keyword": "จัดส่ง",
+              "category": "delivery"
+            }
+          ],
+          "timestamp": "2025-10-20T09:48:37.748Z"
+        }
+      ],
+      "lastUpdated": "2025-10-20T10:12:36.920Z"
+    },
+    {
+      "groupName": "ทำเบียร์แบบโง่ๆไว้กินเอง",
+      "groupUrl": "https://www.facebook.com/groups/1217564859107608/",
+      "query": "เบียร์",
+      "scrapedAt": "2025-10-20T10:05:34.155Z",
+      "totalPosts": 0,
+      "beerRelatedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-20T10:12:36.920Z"
     }
   ],
   "failedGroups": [
     {
       "metadata": {
-        "name": "ตู้แช่เบียร์วุ้นซื้อขายทุกจังหวัด",
-        "url": "https://www.facebook.com/groups/914679235962917/",
+        "name": "ซื้อ-ขาย อุปกรณ์ และวัตถุดิบคราฟเบียร์",
+        "url": "https://www.facebook.com/groups/135155229590527/",
         "index": 5,
-        "total": 7
+        "total": 13
       },
       "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
-      "timestamp": "2025-10-20T09:18:01.721Z"
+      "timestamp": "2025-10-20T09:48:28.735Z"
     },
     {
       "metadata": {
-        "name": "Beer Now Run Later Gang",
-        "url": "https://www.facebook.com/groups/1514529508893599/",
-        "index": 6,
-        "total": 7
-      },
-      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
-      "timestamp": "2025-10-20T09:21:15.895Z"
-    },
-    {
-      "metadata": {
-        "name": "คราฟเบียร์เชียงใหม่ (Chiang Mai Craft Beer)",
-        "url": "https://www.facebook.com/groups/cnxcraftbeer/",
+        "name": "อาจารย์เบียร์ - ฅนตื่นธรรม",
+        "url": "https://www.facebook.com/groups/1729991314512453/",
         "index": 7,
-        "total": 7
+        "total": 13
       },
       "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
-      "timestamp": "2025-10-20T09:26:01.062Z"
+      "timestamp": "2025-10-20T09:55:03.588Z"
+    },
+    {
+      "metadata": {
+        "name": "งานเชียร์เบียร์กิจกรรม สิงห์ ลีโอ",
+        "url": "https://www.facebook.com/groups/939732786717092/",
+        "index": 8,
+        "total": 13
+      },
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "timestamp": "2025-10-20T09:58:27.407Z"
+    },
+    {
+      "metadata": {
+        "name": "ช่วยกันผลักดันเบียร์ไทย ให้ขายได้แบบเสรี 🍺คราฟเบียร์ไทย🇹🇭",
+        "url": "https://www.facebook.com/groups/491491022616317/",
+        "index": 9,
+        "total": 13
+      },
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "timestamp": "2025-10-20T10:01:52.187Z"
+    },
+    {
+      "metadata": {
+        "name": "รับงาน-หางาน งานอีเว้นท์ โคโยตี้ PR PG ชงเหล้า เชียเบียร์",
+        "url": "https://www.facebook.com/groups/465772426917927/",
+        "index": 10,
+        "total": 13
+      },
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "timestamp": "2025-10-20T10:05:20.174Z"
+    },
+    {
+      "metadata": {
+        "name": "เรารักคราฟเบียร์ ไทยหรือนอกก็ok",
+        "url": "https://www.facebook.com/groups/1064529576995576/",
+        "index": 12,
+        "total": 13
+      },
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "timestamp": "2025-10-20T10:08:47.636Z"
+    },
+    {
+      "metadata": {
+        "name": "ตู้แช่เบียร์วุ้นตู้แช่แข็งทั่วไทย",
+        "url": "https://www.facebook.com/groups/477189596640191/",
+        "index": 13,
+        "total": 13
+      },
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "timestamp": "2025-10-20T10:12:36.824Z"
     }
   ]
 }

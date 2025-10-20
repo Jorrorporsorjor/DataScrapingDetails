@@ -1,13 +1,19 @@
 {
-  "generatedAt": "2025-10-20T09:26:01.066Z",
-  "totalKeywords": 1,
-  "totalOccurrences": 1,
+  "generatedAt": "2025-10-20T10:12:36.922Z",
+  "totalKeywords": 2,
+  "totalOccurrences": 2,
   "summary": {
     "byCategory": {
       "beer": {
         "count": 1,
         "keywords": [
           "เบียร์"
+        ]
+      },
+      "delivery": {
+        "count": 1,
+        "keywords": [
+          "จัดส่ง"
         ]
       }
     }
@@ -27,6 +33,23 @@
           "preview": "#สายปาร์ตี้ ไม่ควรพลาด พร้อมกระจายความนุ่ม ละมุน ตัวถังทำมาจาก อลูมิเนียม มีCo2 ในถัง  ถังละ 1,450- ...",
           "postLink": "https://www.facebook.com/groups/415770243606225/posts/874880874361824/?__cft__[0]=AZXTr0JVA5HyGFCJsLDj_5BK6EYKniDpEiCuXWGwHijqR5Q2SStNd4FcbSYuMQN7Uh3pfi-Y5TIdOiuWoRsI21z1xH9lAmLZkAvzlc1dJ_SKsegFNjF5zmCMhGXt2eLav7nunl_zu0uUlAz7koJF5Qjc6Y_KzQUKW4x7aPaJoUpixv35CglCz8QzoPFm4fiSFJC_AHtO_qtqp_HF7TRLzlWx&__tn__=%2CO%2CP-R",
           "groupName": "กลุ่มซื้อขาย เบียร์ช้างถัง 5 ลิตร"
+        }
+      ]
+    },
+    {
+      "keyword": "จัดส่ง",
+      "category": "delivery",
+      "count": 1,
+      "groups": [
+        "อยากเลิกบุหรี่ เลิกเหล้าเบียร์"
+      ],
+      "groupCount": 1,
+      "examples": [
+        {
+          "author": "Halls",
+          "preview": "ฝากร้านด้วยนะคะ ร้านต้องบอกต่อจ้า  จัดส่งจริง ไม่มีบวกเพิ่มจ้า รับประกัน 100%   ... ดูเพิ่มเติม...",
+          "postLink": "https://www.facebook.com/groups/310815131034868/posts/1124755336307506/?__cft__[0]=AZXdk4vN8OEST67lFN8xb8jaoy77J9qXjx_r3zcu7zsVEAm26BOu1q02cp7h3Iw8P7RuOp0YwOOtNroPy5_QAivCo3Fc2NsFGmBAQNw5dxPtJFZ-WM1mHknqcnYltBEbtdqthYAF3IfAeZCv1FFzMsv2WnRL5KQ3ybXMrKJiGBQORsQiqr9xJlGvQIHYBhZFTdFc7cVM0IW7SNngmGGmG8BNS1d9oL2P-44CsWjfRQN3LA&__tn__=%2CO%2CP-R",
+          "groupName": "อยากเลิกบุหรี่ เลิกเหล้าเบียร์"
         }
       ]
     }

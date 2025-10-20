@@ -1,32 +1,72 @@
 [
   {
     "metadata": {
-      "name": "ตู้แช่เบียร์วุ้นซื้อขายทุกจังหวัด",
-      "url": "https://www.facebook.com/groups/914679235962917/",
+      "name": "ซื้อ-ขาย อุปกรณ์ และวัตถุดิบคราฟเบียร์",
+      "url": "https://www.facebook.com/groups/135155229590527/",
       "index": 5,
-      "total": 7
+      "total": 13
     },
     "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
-    "timestamp": "2025-10-20T09:18:01.721Z"
+    "timestamp": "2025-10-20T09:48:28.735Z"
   },
   {
     "metadata": {
-      "name": "Beer Now Run Later Gang",
-      "url": "https://www.facebook.com/groups/1514529508893599/",
-      "index": 6,
-      "total": 7
-    },
-    "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
-    "timestamp": "2025-10-20T09:21:15.895Z"
-  },
-  {
-    "metadata": {
-      "name": "คราฟเบียร์เชียงใหม่ (Chiang Mai Craft Beer)",
-      "url": "https://www.facebook.com/groups/cnxcraftbeer/",
+      "name": "อาจารย์เบียร์ - ฅนตื่นธรรม",
+      "url": "https://www.facebook.com/groups/1729991314512453/",
       "index": 7,
-      "total": 7
+      "total": 13
     },
     "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
-    "timestamp": "2025-10-20T09:26:01.062Z"
+    "timestamp": "2025-10-20T09:55:03.588Z"
+  },
+  {
+    "metadata": {
+      "name": "งานเชียร์เบียร์กิจกรรม สิงห์ ลีโอ",
+      "url": "https://www.facebook.com/groups/939732786717092/",
+      "index": 8,
+      "total": 13
+    },
+    "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+    "timestamp": "2025-10-20T09:58:27.407Z"
+  },
+  {
+    "metadata": {
+      "name": "ช่วยกันผลักดันเบียร์ไทย ให้ขายได้แบบเสรี 🍺คราฟเบียร์ไทย🇹🇭",
+      "url": "https://www.facebook.com/groups/491491022616317/",
+      "index": 9,
+      "total": 13
+    },
+    "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+    "timestamp": "2025-10-20T10:01:52.187Z"
+  },
+  {
+    "metadata": {
+      "name": "รับงาน-หางาน งานอีเว้นท์ โคโยตี้ PR PG ชงเหล้า เชียเบียร์",
+      "url": "https://www.facebook.com/groups/465772426917927/",
+      "index": 10,
+      "total": 13
+    },
+    "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+    "timestamp": "2025-10-20T10:05:20.174Z"
+  },
+  {
+    "metadata": {
+      "name": "เรารักคราฟเบียร์ ไทยหรือนอกก็ok",
+      "url": "https://www.facebook.com/groups/1064529576995576/",
+      "index": 12,
+      "total": 13
+    },
+    "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+    "timestamp": "2025-10-20T10:08:47.636Z"
+  },
+  {
+    "metadata": {
+      "name": "ตู้แช่เบียร์วุ้นตู้แช่แข็งทั่วไทย",
+      "url": "https://www.facebook.com/groups/477189596640191/",
+      "index": 13,
+      "total": 13
+    },
+    "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+    "timestamp": "2025-10-20T10:12:36.824Z"
   }
 ]
