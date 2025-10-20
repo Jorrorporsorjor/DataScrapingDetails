@@ -1,0 +1,32 @@
+[
+  {
+    "metadata": {
+      "name": "ตู้แช่เบียร์วุ้นซื้อขายทุกจังหวัด",
+      "url": "https://www.facebook.com/groups/914679235962917/",
+      "index": 5,
+      "total": 7
+    },
+    "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+    "timestamp": "2025-10-20T09:18:01.721Z"
+  },
+  {
+    "metadata": {
+      "name": "Beer Now Run Later Gang",
+      "url": "https://www.facebook.com/groups/1514529508893599/",
+      "index": 6,
+      "total": 7
+    },
+    "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+    "timestamp": "2025-10-20T09:21:15.895Z"
+  },
+  {
+    "metadata": {
+      "name": "คราฟเบียร์เชียงใหม่ (Chiang Mai Craft Beer)",
+      "url": "https://www.facebook.com/groups/cnxcraftbeer/",
+      "index": 7,
+      "total": 7
+    },
+    "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+    "timestamp": "2025-10-20T09:26:01.062Z"
+  }
+]

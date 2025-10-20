@@ -18,9 +18,7 @@ class TaskQueue {
         task,
         metadata,
         resolve,
-        reject,
-        retries: 0,
-        maxRetries: 1 // ลดจาก 2 เป็น 1 เพื่อลด timeout
+        reject
       });
       this.process();
     });
@@ -55,18 +53,14 @@ class TaskQueue {
       console.error(`❌ [Queue] ล้มเหลว: ${item.metadata.name || 'Unknown'}`);
       console.error(`   เหตุผล: ${error.message}`);
       
-      if (item.retries < item.maxRetries) {
-        item.retries++;
-        console.log(`🔁 [Queue] ลองใหม่ครั้งที่ ${item.retries}/${item.maxRetries}`);
-        this.queue.push(item);
-      } else {
-        this.errors.push({
-          metadata: item.metadata,
-          error: error.message,
-          timestamp: new Date().toISOString()
-        });
-        item.reject(error);
-      }
+      // ไม่ retry - บันทึกเป็น error และข้ามไป
+      this.errors.push({
+        metadata: item.metadata,
+        error: error.message,
+        timestamp: new Date().toISOString()
+      });
+      item.reject(error);
+      
     } finally {
       this.running--;
       this.process();
@@ -271,7 +265,7 @@ const analyzeKeywords = (post) => {
   return foundKeywords;
 };
 
-const extractPostsWithTimeout = async (page, timeout = 30000) => { // เพิ่มเป็น 30 วินาที
+const extractPostsWithTimeout = async (page, timeout = 30000) => {
   try {
     const posts = await Promise.race([
       page.evaluate(() => {
@@ -386,7 +380,7 @@ const extractPostsWithTimeout = async (page, timeout = 30000) => { // เพิ�
   }
 };
 
-async function scrapeGroupWithQueue(page, group, groupIndex, totalGroups, keywordStats) {
+async function scrapeGroupWithQueue(page, group, groupIndex, totalGroups, keywordStats, queryKeyword) {
   const GROUP_URL = group.url;
   
   console.log(`\n${'='.repeat(60)}`);
@@ -397,7 +391,7 @@ async function scrapeGroupWithQueue(page, group, groupIndex, totalGroups, keywor
   try {
     await page.goto(GROUP_URL, { 
       waitUntil: 'domcontentloaded',
-      timeout: 60000  // เพิ่มเป็น 60 วินาที
+      timeout: 60000
     });
     await randomDelay(3000, 5000);
   } catch (error) {
@@ -413,7 +407,7 @@ async function scrapeGroupWithQueue(page, group, groupIndex, totalGroups, keywor
   } catch (e) {}
 
   const allPosts = [];
-  const maxScrollTimes = 3; // ลดจาก 4 เป็น 3 เพื่อประหยัดเวลา
+  const maxScrollTimes = 3;
   let previousPostCount = 0;
   let noNewPostsCount = 0;
 
@@ -424,7 +418,7 @@ async function scrapeGroupWithQueue(page, group, groupIndex, totalGroups, keywor
     
     await randomDelay(2000, 3000);
     
-    const posts = await extractPostsWithTimeout(page, 30000); // เพิ่มเป็น 30 วินาที
+    const posts = await extractPostsWithTimeout(page, 30000);
 
     posts.forEach(post => {
       const phones = extractPhoneNumbers(post.text);
@@ -432,6 +426,7 @@ async function scrapeGroupWithQueue(page, group, groupIndex, totalGroups, keywor
       const prices = extractPrices(post.text);
       const beerBrands = extractBeerBrands(post.text);
       const locations = extractLocations(post.text);
+      const keywords = analyzeKeywords(post);
       
       const deliveryMethods = [];
       const lowerText = post.text.toLowerCase();
@@ -446,6 +441,7 @@ async function scrapeGroupWithQueue(page, group, groupIndex, totalGroups, keywor
       
       const processedPost = {
         ...post,
+        query: queryKeyword,
         contact: {
           phones,
           lineIds,
@@ -457,6 +453,7 @@ async function scrapeGroupWithQueue(page, group, groupIndex, totalGroups, keywor
           locations,
           deliveryMethods
         },
+        keywords: keywords,
         timestamp: new Date().toISOString()
       };
       
@@ -503,8 +500,7 @@ async function scrapeGroupWithQueue(page, group, groupIndex, totalGroups, keywor
   });
 
   beerPosts.forEach(post => {
-    const keywords = analyzeKeywords(post);
-    keywords.forEach(({ keyword, category }) => {
+    post.keywords.forEach(({ keyword, category }) => {
       if (!keywordStats[keyword]) {
         keywordStats[keyword] = {
           keyword: keyword,
@@ -535,6 +531,7 @@ async function scrapeGroupWithQueue(page, group, groupIndex, totalGroups, keywor
   return {
     groupName: group.name,
     groupUrl: GROUP_URL,
+    query: queryKeyword,
     scrapedAt: new Date().toISOString(),
     totalPosts: allPosts.length,
     beerRelatedPosts: beerPosts.length,
@@ -546,7 +543,78 @@ async function scrapeGroupWithQueue(page, group, groupIndex, totalGroups, keywor
   };
 }
 
-async function saveResults(queue, keywordStats) {
+function loadExistingData(filename) {
+  try {
+    if (fs.existsSync(filename)) {
+      const data = fs.readFileSync(filename, 'utf-8');
+      return JSON.parse(data);
+    }
+  } catch (error) {
+    console.warn(`⚠️ ไม่สามารถโหลดไฟล์ ${filename}: ${error.message}`);
+  }
+  return null;
+}
+
+function mergePosts(existingPosts, newPosts) {
+  const postMap = new Map();
+  
+  existingPosts.forEach(post => {
+    if (post.postLink) {
+      postMap.set(post.postLink, post);
+    }
+  });
+  
+  newPosts.forEach(post => {
+    if (post.postLink) {
+      postMap.set(post.postLink, post);
+    }
+  });
+  
+  return Array.from(postMap.values());
+}
+
+function mergeKeywordStats(existingStats, newStats) {
+  const merged = {};
+  
+  if (existingStats && existingStats.keywords) {
+    existingStats.keywords.forEach(stat => {
+      merged[stat.keyword] = {
+        keyword: stat.keyword,
+        category: stat.category,
+        count: stat.count,
+        groups: new Set(stat.groups || []),
+        examples: stat.examples || []
+      };
+    });
+  }
+  
+  Object.values(newStats).forEach(stat => {
+    if (!merged[stat.keyword]) {
+      merged[stat.keyword] = {
+        keyword: stat.keyword,
+        category: stat.category,
+        count: 0,
+        groups: new Set(),
+        examples: []
+      };
+    }
+    
+    merged[stat.keyword].count += stat.count;
+    
+    stat.groups.forEach(g => merged[stat.keyword].groups.add(g));
+    
+    stat.examples.forEach(ex => {
+      const exists = merged[stat.keyword].examples.some(e => e.postLink === ex.postLink);
+      if (!exists && merged[stat.keyword].examples.length < 5) {
+        merged[stat.keyword].examples.push(ex);
+      }
+    });
+  });
+  
+  return merged;
+}
+
+async function saveResults(queue, keywordStats, queryKeyword) {
   const successfulResults = queue.results.map(r => r.result);
   const failedTasks = queue.errors;
 
@@ -563,9 +631,57 @@ async function saveResults(queue, keywordStats) {
   console.log(`🍺 โพสต์เกี่ยวกับเบียร์: ${totalBeerPosts}`);
   console.log(`📞 โพสต์ที่มีข้อมูลติดต่อ: ${totalWithContact}`);
 
+  if (!fs.existsSync('./output')) {
+    fs.mkdirSync('./output');
+  }
+
+  const existingData = loadExistingData('./output/all_posts_data.json');
+  const existingKeywordData = loadExistingData('./output/success_keyword.json');
+
+  let allMergedGroups = [];
+  const groupMap = new Map();
+
+  if (existingData && existingData.groups) {
+    existingData.groups.forEach(group => {
+      groupMap.set(group.groupName, group);
+    });
+  }
+
+  successfulResults.forEach(newGroup => {
+    const existingGroup = groupMap.get(newGroup.groupName);
+    
+    if (existingGroup) {
+      const mergedPosts = mergePosts(existingGroup.posts || [], newGroup.posts || []);
+      
+      groupMap.set(newGroup.groupName, {
+        ...newGroup,
+        posts: mergedPosts,
+        totalPosts: mergedPosts.length,
+        beerRelatedPosts: mergedPosts.length,
+        statistics: {
+          withContact: mergedPosts.filter(p => p.contact.hasContact).length,
+          completenessRate: Math.round((mergedPosts.filter(p => p.contact.hasContact).length / (mergedPosts.length || 1)) * 100)
+        },
+        lastUpdated: new Date().toISOString()
+      });
+    } else {
+      groupMap.set(newGroup.groupName, {
+        ...newGroup,
+        lastUpdated: new Date().toISOString()
+      });
+    }
+  });
+
+  allMergedGroups = Array.from(groupMap.values());
+
+  const finalTotalPosts = allMergedGroups.reduce((sum, g) => sum + (g.totalPosts || 0), 0);
+  const finalBeerPosts = allMergedGroups.reduce((sum, g) => sum + (g.beerRelatedPosts || 0), 0);
+  const finalWithContact = allMergedGroups.reduce((sum, g) => sum + (g.statistics?.withContact || 0), 0);
+
   const queueSummary = queue.getSummary();
   const results = {
     scrapedAt: new Date().toISOString(),
+    query: queryKeyword,
     status: failedTasks.length === 0 ? 'complete' : 'partial',
     queue: {
       total: queueSummary.total,
@@ -574,22 +690,22 @@ async function saveResults(queue, keywordStats) {
       successRate: queueSummary.successRate
     },
     summary: {
-      totalPosts: totalAllPosts,
-      totalBeerPosts: totalBeerPosts,
-      totalWithContact: totalWithContact
+      totalPosts: finalTotalPosts,
+      totalBeerPosts: finalBeerPosts,
+      totalWithContact: finalWithContact,
+      totalGroups: allMergedGroups.length
     },
-    groups: successfulResults,
+    groups: allMergedGroups,
     failedGroups: failedTasks
   };
 
-  if (!fs.existsSync('./output')) {
-    fs.mkdirSync('./output');
-  }
-
   fs.writeFileSync('./output/all_posts_data.json', JSON.stringify(results, null, 2), 'utf-8');
   console.log(`\n💾 บันทึกข้อมูลลงไฟล์: ./output/all_posts_data.json`);
+  console.log(`   📊 รวมโพสต์ทั้งหมด: ${finalTotalPosts} โพสต์ (จาก ${allMergedGroups.length} กลุ่ม)`);
 
-  const keywordData = Object.values(keywordStats)
+  const mergedKeywordStats = mergeKeywordStats(existingKeywordData, keywordStats);
+
+  const keywordData = Object.values(mergedKeywordStats)
     .map(stat => ({
       keyword: stat.keyword,
       category: stat.category,
@@ -623,6 +739,7 @@ async function saveResults(queue, keywordStats) {
 
   fs.writeFileSync('./output/success_keyword.json', JSON.stringify(keywordResults, null, 2), 'utf-8');
   console.log(`💾 บันทึกข้อมูลคีย์เวิร์ดลงไฟล์: ./output/success_keyword.json`);
+  console.log(`   🔑 รวมคีย์เวิร์ดทั้งหมด: ${keywordData.length} คีย์เวิร์ด`);
   
   console.log('\n🔑 คีย์เวิร์ดที่พบมากที่สุด (Top 10):');
   keywordData.slice(0, 10).forEach((k, i) => {
@@ -635,11 +752,15 @@ async function saveResults(queue, keywordStats) {
     lineIds: new Set()
   };
 
-  successfulResults.forEach(group => {
-    group.posts.forEach(post => {
-      post.contact.phones.forEach(phone => allContacts.phones.add(phone));
-      post.contact.lineIds.forEach(lineId => allContacts.lineIds.add(lineId));
-    });
+  allMergedGroups.forEach(group => {
+    if (group.posts) {
+      group.posts.forEach(post => {
+        if (post.contact) {
+          post.contact.phones?.forEach(phone => allContacts.phones.add(phone));
+          post.contact.lineIds?.forEach(lineId => allContacts.lineIds.add(lineId));
+        }
+      });
+    }
   });
 
   console.log(`   📱 เบอร์โทรศัพท์ทั้งหมด: ${allContacts.phones.size}`);
@@ -659,6 +780,33 @@ async function saveResults(queue, keywordStats) {
     );
     console.log(`💾 บันทึกรายการกลุ่มที่ล้มเหลว: ./output/failed_groups.json`);
   }
+
+  console.log('\n' + '='.repeat(60));
+  console.log('🔄 สรุปการอัปเดตข้อมูล');
+  console.log('='.repeat(60));
+  
+  if (existingData) {
+    const oldPostCount = existingData.summary?.totalBeerPosts || 0;
+    const newPostCount = finalBeerPosts;
+    const addedPosts = newPostCount - oldPostCount;
+    
+    console.log(`📊 โพสต์เกี่ยวกับเบียร์:`);
+    console.log(`   ข้อมูลเดิม: ${oldPostCount} โพสต์`);
+    console.log(`   ข้อมูลใหม่: ${newPostCount} โพสต์`);
+    console.log(`   เพิ่มขึ้น: ${addedPosts > 0 ? '+' : ''}${addedPosts} โพสต์`);
+  } else {
+    console.log(`✨ สร้างไฟล์ใหม่ทั้งหมด`);
+    console.log(`   โพสต์: ${finalBeerPosts} โพสต์`);
+  }
+  
+  if (existingKeywordData) {
+    const oldKeywordCount = existingKeywordData.totalKeywords || 0;
+    const newKeywordCount = keywordData.length;
+    
+    console.log(`\n🔑 คีย์เวิร์ด:`);
+    console.log(`   ข้อมูลเดิม: ${oldKeywordCount} คีย์เวิร์ด`);
+    console.log(`   ข้อมูลใหม่: ${newKeywordCount} คีย์เวิร์ด`);
+  }
 }
 
 async function scrapeFacebookGroup() {
@@ -673,14 +821,14 @@ async function scrapeFacebookGroup() {
       '--disable-blink-features=AutomationControlled',
       '--window-size=1920,1080',
     ],
-    protocolTimeout: 180000, // เพิ่มเป็น 3 นาที
+    protocolTimeout: 180000,
   });
 
   try {
     const page = await browser.newPage();
     
-    page.setDefaultTimeout(60000); // เพิ่มเป็น 60 วินาที
-    page.setDefaultNavigationTimeout(60000); // เพิ่มเป็น 60 วินาที
+    page.setDefaultTimeout(60000);
+    page.setDefaultNavigationTimeout(60000);
     
     await page.evaluateOnNewDocument(() => {
       Object.defineProperty(navigator, 'webdriver', { get: () => false });
@@ -739,12 +887,15 @@ async function scrapeFacebookGroup() {
     const queue = new TaskQueue(1);
     
     let groups = [];
+    let queryKeyword = '';
     try {
       console.log('🌐 กำลังโหลด groups.json จาก API...');
-      const res = await axios.get('http://192.168.88.186:3002/app/groups.json');
+      const res = await axios.get('http://10.1.66.89:3002/app/groups.json');
       groups = Array.isArray(res.data.groups) ? res.data.groups.slice(1) : [];
+      queryKeyword = res.data.query || 'ไม่ระบุ';
       console.log(`📋 โหลดข้อมูล ${groups.length} กลุ่มจาก API`);
-      groups.forEach((g, i) => console.log(`   ${i + 1}. ${g.name}`));
+      console.log(`🔍 Query Keyword: "${queryKeyword}"`);
+      groups.forEach((g, i) => console.log(`   ${i + 0}. ${g.name}`));
     } catch (error) {
       console.error('❌ โหลด groups.json จาก API ไม่สำเร็จ:', error.message);
       await browser.close();
@@ -756,14 +907,16 @@ async function scrapeFacebookGroup() {
     console.log('\n🚀 เริ่มเพิ่มงานเข้า Queue');
     for (let i = 0; i < groups.length; i++) {
       queue.add(
-        () => scrapeGroupWithQueue(page, groups[i], i, groups.length, keywordStats),
+        () => scrapeGroupWithQueue(page, groups[i], i, groups.length, keywordStats, queryKeyword),
         { 
           name: groups[i].name,
           url: groups[i].url,
           index: i + 1,
           total: groups.length
         }
-      );
+      ).catch(err => {
+        console.error(`⚠️ กลุ่ม "${groups[i].name}" ล้มเหลว - ข้ามไป`);
+      });
     }
 
     console.log('⏳ รอให้ Queue ประมวลผลทุกกลุ่ม...\n');
@@ -777,12 +930,12 @@ async function scrapeFacebookGroup() {
     console.log(`❌ ล้มเหลว: ${queueSummary.failed} กลุ่ม`);
     console.log(`📈 อัตราความสำเร็จ: ${queueSummary.successRate}`);
 
-    await saveResults(queue, keywordStats);
+    await saveResults(queue, keywordStats, queryKeyword);
 
     console.log('\n✅ เสร็จสิ้นการทำงาน');
-    console.log('📁 ไฟล์ที่สร้าง:');
-    console.log('   - ./output/all_posts_data.json');
-    console.log('   - ./output/success_keyword.json');
+    console.log('📁 ไฟล์ที่สร้าง/อัปเดต:');
+    console.log('   - ./output/all_posts_data.json (รวมข้อมูลเก่าและใหม่)');
+    console.log('   - ./output/success_keyword.json (รวมข้อมูลเก่าและใหม่)');
     if (queue.errors.length > 0) {
       console.log('   - ./output/failed_groups.json');
     }
@@ -797,7 +950,6 @@ async function scrapeFacebookGroup() {
   }
 }
 
-// ✅ รันเพียงครั้งเดียวแล้วจบ (ไม่มี loop)
 scrapeFacebookGroup().catch(error => {
   console.error('❌ Fatal Error:', error);
   process.exit(1);

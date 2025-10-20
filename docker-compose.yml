@@ -5,35 +5,23 @@ services:
     build: .
     container_name: facebook-scraper
     volumes:
-      # Mount output directory พร้อมสร้างโฟลเดอร์ตามวันที่
       - ./data/outputs:/usr/src/app/output
-      # Mount groups.json (read-only)
-      - ./groups.json:/usr/src/app/groups.json:ro
     environment:
       - TZ=Asia/Bangkok
       - NODE_ENV=production
-      # Configuration
+      # Output Configuration
       - OUTPUT_DIR=/usr/src/app/output
       - MERGE_EXISTING=true
       - MAX_HISTORY_DAYS=30
+      # Groups Source (API URL)
+      - GROUPS_SOURCE=http://10.1.66.89:3002/app/groups.json
+      - SKIP_FIRST_GROUP=false
+      # Facebook Credentials
+      - FB_EMAIL=test.face112@gmail.com
+      - FB_PASSWORD=passW@rd
     restart: unless-stopped
     ports:
       - "4000:4000"
-    networks:
-      - scraper-network
-
-networks:
-  scraper-network:
-    driver: bridge
-
-# Structure ที่จะถูกสร้าง:
-# ./data/outputs/
-#   ├── latest/
-#   │   ├── all_posts_data.json
-#   │   ├── success_keyword.json
-#   │   └── failed_groups.json
-#   ├── history/
-#   │   ├── 2025-10-19_14-30-00/
-#   │   ├── 2025-10-19_18-45-00/
-#   │   └── ...
-#   └── merged_data.json (combined from all history)
+    extra_hosts:
+      # ถ้า API อยู่ในเครื่องเดียวกัน
+      - "host.docker.internal:host-gateway"

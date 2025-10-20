@@ -1,8 +1,8 @@
 # ---------- Base Image ----------
-FROM node:20-slim
+FROM node:20-slim AS base
 
 # ---------- Install Chromium dependencies ----------
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y --no-install-recommends \
   chromium \
   fonts-thai-tlwg \
   fonts-liberation \
@@ -27,23 +27,35 @@ RUN apt-get update && apt-get install -y \
   libu2f-udev \
   xdg-utils \
   wget \
+  curl \
   ca-certificates \
-  --no-install-recommends && apt-get clean && rm -rf /var/lib/apt/lists/*
+  && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # ---------- Puppeteer environment ----------
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
 ENV PUPPETEER_SKIP_DOWNLOAD=true
+ENV NODE_ENV=production
 
-# ---------- Working directory ----------
+# ---------- Create app directory ----------
 WORKDIR /usr/src/app
 
-# ---------- Copy & Install ----------
+# ---------- Install dependencies ----------
 COPY package*.json ./
 RUN npm ci --omit=dev
 
-# ---------- Copy Source ----------
+# ---------- Copy source ----------
 COPY . .
 
-# ---------- Expose & Start ----------
+# ---------- Create non-root user ----------
+RUN useradd -m nodeuser
+USER nodeuser
+
+# ---------- Expose port ----------
 EXPOSE 4000
+
+# ---------- Healthcheck ----------
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+  CMD curl -f http://localhost:4000/status || exit 1
+
+# ---------- Start command ----------
 CMD ["node", "api/server.js"]

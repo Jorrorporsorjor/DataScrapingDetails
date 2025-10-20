@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2025-10-17T06:59:47.071Z",
+  "generatedAt": "2025-10-20T09:26:01.066Z",
   "totalKeywords": 1,
-  "totalOccurrences": 2,
+  "totalOccurrences": 1,
   "summary": {
     "byCategory": {
       "beer": {
-        "count": 2,
+        "count": 1,
         "keywords": [
           "เบียร์"
         ]
@@ -16,23 +16,17 @@
     {
       "keyword": "เบียร์",
       "category": "beer",
-      "count": 2,
+      "count": 1,
       "groups": [
-        "งานเชียร์เบียร์ PG CT MC Event Sup By Dao"
+        "กลุ่มซื้อขาย เบียร์ช้างถัง 5 ลิตร"
       ],
       "groupCount": 1,
       "examples": [
         {
-          "author": "Unknown",
-          "preview": "หางานเชียร์เบียร์ หาดใหญ่ค่ะ...",
-          "postLink": "https://www.facebook.com/groups/1244441712750913/posts/2138909199970822/?__cft__[0]=AZUTGNKSvdfnLiFN1MAnr3X2AzJ73-MOsQ8AWlpt4AfI1e0L_QIPOfeuwT4JOzumS6DcSip9E1l1i0WuuLmp5nNzqXv8uVi-kjpnOgbORXugPLyKzNZdrbHG05sLiHGhwQN5R3SxecwIBsuvZYJmKdAsiK363xr5NTLikk0krgEOzCiXxZAkZ8wf5c2pD7xkZGA&__tn__=%2CO%2CP-R",
-          "groupName": "งานเชียร์เบียร์ PG CT MC Event Sup By Dao"
-        },
-        {
-          "author": "Unknown",
-          "preview": "หางานเชียร์เบียร์โคราช โซน 30 กันยาค่ะ...",
-          "postLink": "https://www.facebook.com/groups/1244441712750913/posts/2140910643104011/?__cft__[0]=AZVAzvNu7sCnTZKZy05TlZlgXLzlolC5soYiGDvcZl7zEmMMH-9G-CO0q1RI1ZpWhA_mQgRIclQlMKz1d8OR95VbTs9suoIzPomIjVRY88OJ2d6Nir3FSu864hR1qkm8tA1K4bdHQtkYlFfz7JA8aaqD54bpGRGQOI2AMKKixFN4mS0EJM8tzr50l6jE60By1aG59QiIuku49xXdH-RbuCYH&__tn__=%2CO%2CP-R",
-          "groupName": "งานเชียร์เบียร์ PG CT MC Event Sup By Dao"
+          "author": "Raksuda S Suksomphet",
+          "preview": "#สายปาร์ตี้ ไม่ควรพลาด พร้อมกระจายความนุ่ม ละมุน ตัวถังทำมาจาก อลูมิเนียม มีCo2 ในถัง  ถังละ 1,450- ...",
+          "postLink": "https://www.facebook.com/groups/415770243606225/posts/874880874361824/?__cft__[0]=AZXTr0JVA5HyGFCJsLDj_5BK6EYKniDpEiCuXWGwHijqR5Q2SStNd4FcbSYuMQN7Uh3pfi-Y5TIdOiuWoRsI21z1xH9lAmLZkAvzlc1dJ_SKsegFNjF5zmCMhGXt2eLav7nunl_zu0uUlAz7koJF5Qjc6Y_KzQUKW4x7aPaJoUpixv35CglCz8QzoPFm4fiSFJC_AHtO_qtqp_HF7TRLzlWx&__tn__=%2CO%2CP-R",
+          "groupName": "กลุ่มซื้อขาย เบียร์ช้างถัง 5 ลิตร"
         }
       ]
     }

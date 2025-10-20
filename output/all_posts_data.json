@@ -1,101 +1,37 @@
 {
-  "scrapedAt": "2025-10-17T06:59:47.069Z",
-  "status": "complete",
+  "scrapedAt": "2025-10-20T09:26:01.065Z",
+  "query": "เบียร์",
+  "status": "partial",
   "queue": {
-    "total": 4,
+    "total": 7,
     "successful": 4,
-    "failed": 0,
-    "successRate": "100.00%"
+    "failed": 3,
+    "successRate": "57.14%"
   },
   "summary": {
-    "totalPosts": 16,
-    "totalBeerPosts": 6,
-    "totalWithContact": 0
+    "totalPosts": 21,
+    "totalBeerPosts": 2,
+    "totalWithContact": 0,
+    "totalGroups": 8
   },
   "groups": [
     {
-      "groupName": "หางานกลางคืนเชียร์เบียร์,Sales โรงแรม,ร้านเหล้า/อาหารผับ,สถานบันเทิงทั่วไทย",
-      "groupUrl": "https://www.facebook.com/groups/2531033120463206/",
-      "scrapedAt": "2025-10-17T06:50:39.507Z",
-      "totalPosts": 3,
-      "beerRelatedPosts": 3,
+      "groupName": "หางาน Staff Pretty MC Event PC PG BA พนักงานประจำบูธ roadshow เชียร์เบียร์",
+      "groupUrl": "https://www.facebook.com/groups/996304311268944/",
+      "scrapedAt": "2025-10-20T08:21:49.383Z",
+      "totalPosts": 0,
+      "beerRelatedPosts": 0,
       "statistics": {
         "withContact": 0,
         "completenessRate": 0
       },
-      "posts": [
-        {
-          "author": "Unknown",
-          "authorProfileLink": "https://www.facebook.com/groups/2531033120463206/user/100001678314004/",
-          "text": "ด่วน รับสมัคร  ร้าน IZUMI รับสมัครพนักงานเสิร์ฟสาวสวย (หน้าตาดี)  อายุ : อายุ 20-35ปี... ดูเพิ่มเติม",
-          "postLink": "https://www.facebook.com/groups/2531033120463206/posts/4393490777550755/?__cft__[0]=AZX-3EsifrJs98oP379ukngnomqzRqarUrNtzc_b-Bbyal_uvQzn-zCy5m7c8cV4PteyXyF_oiFByEZKl87flG75oV0fsDKUBReHWkMut3ODAOtpubBksn--Cf_QyP_u5BiXGGSRkD-u8W81cSfzBJPbXshfEaj_ESXlULie1E2nFtkMhJ_uGDw_VbOTJjJkBrPqjfYAtvhe-MiovsIZ5WMd&__tn__=%2CO%2CP-R",
-          "imageUrl": "",
-          "postTime": "ไม่ระบุ",
-          "rawTimestamp": "2025-10-17T06:50:26.983Z",
-          "contact": {
-            "phones": [],
-            "lineIds": [],
-            "hasContact": false
-          },
-          "productInfo": {
-            "prices": [],
-            "beerBrands": [],
-            "locations": [],
-            "deliveryMethods": []
-          },
-          "timestamp": "2025-10-17T06:50:26.986Z"
-        },
-        {
-          "author": "Unknown",
-          "authorProfileLink": "https://www.facebook.com/groups/2531033120463206/user/100021900135916/",
-          "text": "รับสมัคร พีอาร์ สาวสวย รายได้ดี ด่วน ลงร้านคาราโอเกะ The lover Bangkok ย่านพัฒนาการ43 กทม  ร้านเปิดมานานกว่า 15 ปี มีฐานลูกค้า ทิปดี   รับทั้งประจำ แล้วก็ฟรีแลนด์ ทำประจำดริ้ง160  ฟ... ดูเพิ่มเติม",
-          "postLink": "https://www.facebook.com/groups/2531033120463206/posts/4393456927554140/?__cft__[0]=AZVzNA1NVeWUu9i2Rss0xmNxzIFc2D7ASX2v3jDVzJNYgKxyUGA6KVg3AaKs-3a-p52lxAw8LNvG2Q4W3PJllb0gZHiVi50EIsrzaRicvJBKYw_kFR3abzUu6rXZn53ThKEGBK-o9tYSHHbrqK6kuCBilFRlF5LrcJC1VdlJ2KIlfNIBVeeNwu_WzlnTZlRCqlpTBCS8AAix7lBm-Xve1mJr&__tn__=%2CO%2CP-R",
-          "imageUrl": "https://scontent.fbkk5-7.fna.fbcdn.net/v/t39.30808-6/561376271_2059908314749153_2350165949912154682_n.jpg?stp=cp6_dst-jpg_p960x960_tt6&_nc_cat=108&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=ubK92VFvjDsQ7kNvwFy3zOd&_nc_oc=AdmF8VowLw3NmGF5TDQobnkpMhKSNn14nrRLETvkFLvdeDyy56HfLnFu18iMPCXfT0g&_nc_zt=23&_nc_ht=scontent.fbkk5-7.fna&_nc_gid=diJuv5WSGFjeBDsG861IeQ&oh=00_AffkL64wDj64xBOSFhbWiAgND1v2akoEBxJdPlsZ-m246g&oe=68F7A57C",
-          "postTime": "Joy Pawithida",
-          "rawTimestamp": "2025-10-17T06:50:26.983Z",
-          "contact": {
-            "phones": [],
-            "lineIds": [],
-            "hasContact": false
-          },
-          "productInfo": {
-            "prices": [],
-            "beerBrands": [],
-            "locations": [
-              "กทม"
-            ],
-            "deliveryMethods": []
-          },
-          "timestamp": "2025-10-17T06:50:26.987Z"
-        },
-        {
-          "author": "Unknown",
-          "authorProfileLink": "https://www.facebook.com/groups/2531033120463206/user/100006424611681/",
-          "text": "รับสมัครสาวๆนั่งดริ้งจำนวนมาก อายุ18-35ปี ร้านอยู่ใกล้สนามบินดอนเมือง",
-          "postLink": "https://www.facebook.com/groups/2531033120463206/posts/4393251840907982/?__cft__[0]=AZW-yhhk8UjCZsrySAlekpAZWhz6t6OGppPz-7pWE8sUu4iOwunKQpMA1xM_DR56AbRlISvAuKPdMkJ5-gWeNihZUrgeM60ds3AAG0k9nvRBiOHLJZHnpvXoIKMI5viPjndq8EVkWnJnEiX4rquqZfp_oamx3KGkgArJ_ZgUMddRtG7GWl1lRzXK-4lWKbJXDk-MvhHPQo63pRLqWH1m5Ef6&__tn__=%2CO%2CP-R",
-          "imageUrl": "",
-          "postTime": "ไม่ระบุ",
-          "rawTimestamp": "2025-10-17T06:50:26.983Z",
-          "contact": {
-            "phones": [],
-            "lineIds": [],
-            "hasContact": false
-          },
-          "productInfo": {
-            "prices": [],
-            "beerBrands": [],
-            "locations": [],
-            "deliveryMethods": []
-          },
-          "timestamp": "2025-10-17T06:50:26.988Z"
-        }
-      ]
+      "posts": []
     },
     {
-      "groupName": "หางาน Staff Pretty MC Event PC PG BA พนักงานประจำบูธ roadshow เชียร์เบียร์",
-      "groupUrl": "https://www.facebook.com/groups/996304311268944/",
-      "scrapedAt": "2025-10-17T06:50:59.200Z",
-      "totalPosts": 2,
+      "groupName": "คนรักกระป๋องเบียร์ไทย-นอก และอื่นๆ",
+      "groupUrl": "https://www.facebook.com/groups/899243496833153/",
+      "scrapedAt": "2025-10-20T08:22:11.324Z",
+      "totalPosts": 1,
       "beerRelatedPosts": 0,
       "statistics": {
         "withContact": 0,
@@ -106,65 +42,20 @@
     {
       "groupName": "งานเชียร์เบียร์ PG CT MC Event Sup By Dao",
       "groupUrl": "https://www.facebook.com/groups/1244441712750913/",
-      "scrapedAt": "2025-10-17T06:51:16.518Z",
-      "totalPosts": 3,
-      "beerRelatedPosts": 2,
+      "scrapedAt": "2025-10-20T08:22:29.918Z",
+      "totalPosts": 1,
+      "beerRelatedPosts": 0,
       "statistics": {
         "withContact": 0,
         "completenessRate": 0
       },
-      "posts": [
-        {
-          "author": "Unknown",
-          "authorProfileLink": "https://www.facebook.com/groups/1244441712750913/user/100013808571744/",
-          "text": "หางานเชียร์เบียร์ หาดใหญ่ค่ะ",
-          "postLink": "https://www.facebook.com/groups/1244441712750913/posts/2138909199970822/?__cft__[0]=AZUTGNKSvdfnLiFN1MAnr3X2AzJ73-MOsQ8AWlpt4AfI1e0L_QIPOfeuwT4JOzumS6DcSip9E1l1i0WuuLmp5nNzqXv8uVi-kjpnOgbORXugPLyKzNZdrbHG05sLiHGhwQN5R3SxecwIBsuvZYJmKdAsiK363xr5NTLikk0krgEOzCiXxZAkZ8wf5c2pD7xkZGA&__tn__=%2CO%2CP-R",
-          "imageUrl": "",
-          "postTime": "Piyathida Khongrarueai",
-          "rawTimestamp": "2025-10-17T06:51:06.452Z",
-          "contact": {
-            "phones": [],
-            "lineIds": [],
-            "hasContact": false
-          },
-          "productInfo": {
-            "prices": [],
-            "beerBrands": [],
-            "locations": [],
-            "deliveryMethods": []
-          },
-          "timestamp": "2025-10-17T06:51:06.453Z"
-        },
-        {
-          "author": "Unknown",
-          "authorProfileLink": "https://www.facebook.com/groups/1244441712750913/user/100054918263836/",
-          "text": "หางานเชียร์เบียร์โคราช โซน 30 กันยาค่ะ",
-          "postLink": "https://www.facebook.com/groups/1244441712750913/posts/2140910643104011/?__cft__[0]=AZVAzvNu7sCnTZKZy05TlZlgXLzlolC5soYiGDvcZl7zEmMMH-9G-CO0q1RI1ZpWhA_mQgRIclQlMKz1d8OR95VbTs9suoIzPomIjVRY88OJ2d6Nir3FSu864hR1qkm8tA1K4bdHQtkYlFfz7JA8aaqD54bpGRGQOI2AMKKixFN4mS0EJM8tzr50l6jE60By1aG59QiIuku49xXdH-RbuCYH&__tn__=%2CO%2CP-R",
-          "imageUrl": "",
-          "postTime": "Natcha Baebkrathok",
-          "rawTimestamp": "2025-10-17T06:51:06.452Z",
-          "contact": {
-            "phones": [],
-            "lineIds": [],
-            "hasContact": false
-          },
-          "productInfo": {
-            "prices": [],
-            "beerBrands": [],
-            "locations": [
-              "โคราช"
-            ],
-            "deliveryMethods": []
-          },
-          "timestamp": "2025-10-17T06:51:06.453Z"
-        }
-      ]
+      "posts": []
     },
     {
       "groupName": "คราฟเบียร์ไทยและสุราก้าวหน้า",
       "groupUrl": "https://www.facebook.com/groups/788158899526864/",
-      "scrapedAt": "2025-10-17T06:59:46.967Z",
-      "totalPosts": 8,
+      "scrapedAt": "2025-10-20T08:26:37.770Z",
+      "totalPosts": 11,
       "beerRelatedPosts": 1,
       "statistics": {
         "withContact": 0,
@@ -172,13 +63,13 @@
       },
       "posts": [
         {
-          "author": "Unknown",
+          "author": "Pun Pun",
           "authorProfileLink": "https://www.facebook.com/groups/788158899526864/user/1550400641/",
           "text": "ร้านนี้ส่งจริง มีรีวิวการันตีครับ กรณีที่ของมีปัญหาจากการขนส่งพร้อมเคลมต้นใหม่ให้ฟรี ทุกท่านมั่นใจได้ครับ",
-          "postLink": "https://www.facebook.com/groups/788158899526864/posts/1266133308396085/?__cft__[0]=AZUmwS7SFVsFTUibqAxwgQzPSaubXqidvb82DVExCwVGwFm_De0LahVkWi_ZOMzsnbDQ-ZkGAqBbDvAg6M728F2SnFVgS-d7USEMU80MJApuz-rOUJydDtk7BgbhB-peCZRxHWCbbqiIPNIAd31l4fLvdqQ99z3ERhFLo8mVN-43AIClFhLogsm2m9-2I4_jkRwswKwKpUTIIDV1_nNhcYP3K-IeGDbfi1mxXkKe9UqV2A&__tn__=%2CO%2CP-R",
-          "imageUrl": "https://scontent.fbkk5-3.fna.fbcdn.net/v/t39.30808-6/521953090_608482402309154_5638180509367070211_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=nQA3to3di88Q7kNvwFpnnZV&_nc_oc=Adlu1udPMxiB5wq01wTaCFPygd2OCwMibeXai2g-vT6Ec_iur7c4AFAm24_15mMCUk0&_nc_zt=23&_nc_ht=scontent.fbkk5-3.fna&_nc_gid=6PEPR5YgBpjfrOd1ORpxPw&oh=00_Afctku9paEhuWJmeIRH722uZSsS_XTBkSX8jc6Ux2gETGw&oe=68F7AFF2",
+          "postLink": "https://www.facebook.com/groups/788158899526864/posts/1266133308396085/?__cft__[0]=AZXP50zOazn6iGHdFaIdKJjI2SEHfInkoW7lA9PmGOfqwA3ZaGhQKPXrpq9sUhDHGb-mhKxUm-60LsfwHH5EQWuwdv9SQGlP0ajGTF-HDjzK_8DiyOm_iNWkiYCnccaEa6aJgRZNgFKyu8hjOeUcd1NGniIIIH9y7Z7uNnB6yaiiNZqA5rSRD5UTZadef35SbHRwaMlz5qIY0vhcibDh_7IT0wmpmVaxBp7Fk_-1qcmZTg&__tn__=%2CO%2CP-R",
+          "imageUrl": "https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/521953090_608482402309154_5638180509367070211_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=F00PB9CkkDcQ7kNvwH4G1Vm&_nc_oc=AdkWHqCecn1Cw6kOIsKBCDHnBmMHWy5RyJivqLsmOdDtKaaeugW2CKrApWjpC3zS1Bk&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=g8NCWVxmgN3ocagtn-CTKw&oh=00_AfdB1minJ4bDTGpT_MD77QAAPLTt8pG59lbAPyBCvtm-HA&oe=68FBDCB2",
           "postTime": "ไม่ระบุ",
-          "rawTimestamp": "2025-10-17T06:55:55.927Z",
+          "rawTimestamp": "2025-10-20T08:22:45.771Z",
           "contact": {
             "phones": [],
             "lineIds": [],
@@ -190,10 +81,128 @@
             "locations": [],
             "deliveryMethods": []
           },
-          "timestamp": "2025-10-17T06:55:55.928Z"
+          "timestamp": "2025-10-20T08:22:45.772Z"
         }
       ]
+    },
+    {
+      "groupName": "สมาคมคนชอบกินเบียร์ เเห่งประเทศไทย",
+      "groupUrl": "https://www.facebook.com/groups/390593440085700/",
+      "query": "เบียร์",
+      "scrapedAt": "2025-10-20T09:12:35.625Z",
+      "totalPosts": 1,
+      "beerRelatedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-20T09:26:01.064Z"
+    },
+    {
+      "groupName": "กลุ่มหางาน เอ็นเตอร์เทน/ชงเหล้า/เชียร์เบียร์ 🌸เชียงราย/เชียงใหม่/พะเยา",
+      "groupUrl": "https://www.facebook.com/groups/1614292132265355/",
+      "query": "เบียร์",
+      "scrapedAt": "2025-10-20T09:12:53.436Z",
+      "totalPosts": 1,
+      "beerRelatedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-20T09:26:01.064Z"
+    },
+    {
+      "groupName": "ซื้อขาย ขวด แก้ว กาแฟ เหล้า เบียร์ น้ำอัดลมทุกอย่าง อิสระ",
+      "groupUrl": "https://www.facebook.com/groups/669724471076239/",
+      "query": "เบียร์",
+      "scrapedAt": "2025-10-20T09:13:11.554Z",
+      "totalPosts": 3,
+      "beerRelatedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-20T09:26:01.064Z"
+    },
+    {
+      "groupName": "กลุ่มซื้อขาย เบียร์ช้างถัง 5 ลิตร",
+      "groupUrl": "https://www.facebook.com/groups/415770243606225/",
+      "query": "เบียร์",
+      "scrapedAt": "2025-10-20T09:14:47.433Z",
+      "totalPosts": 3,
+      "beerRelatedPosts": 1,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [
+        {
+          "author": "Raksuda S Suksomphet",
+          "authorProfileLink": "https://www.facebook.com/groups/415770243606225/user/100063033877930/",
+          "text": "#สายปาร์ตี้ ไม่ควรพลาด พร้อมกระจายความนุ่ม ละมุน ตัวถังทำมาจาก อลูมิเนียม มีCo2 ในถัง  ถังละ 1,450- แถมฟรี กระเป๋า Ocean Bag ใส่น้ำเเข็งเเช่เบียร์ได้#อยุธย... ดูเพิ่มเติม",
+          "postLink": "https://www.facebook.com/groups/415770243606225/posts/874880874361824/?__cft__[0]=AZXTr0JVA5HyGFCJsLDj_5BK6EYKniDpEiCuXWGwHijqR5Q2SStNd4FcbSYuMQN7Uh3pfi-Y5TIdOiuWoRsI21z1xH9lAmLZkAvzlc1dJ_SKsegFNjF5zmCMhGXt2eLav7nunl_zu0uUlAz7koJF5Qjc6Y_KzQUKW4x7aPaJoUpixv35CglCz8QzoPFm4fiSFJC_AHtO_qtqp_HF7TRLzlWx&__tn__=%2CO%2CP-R",
+          "imageUrl": "https://scontent-bkk1-1.xx.fbcdn.net/v/t39.30808-6/480456845_957593146351806_1060574156747553766_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=O0W9IaoIjKIQ7kNvwH6oE1H&_nc_oc=AdkS9lpp7Ggocpg04iyrxsa2diooFeqP93nBvBoO3-XhD5b2IHfSVJ180Tl9kZpGRnc&_nc_zt=23&_nc_ht=scontent-bkk1-1.xx&_nc_gid=T_tittBX8wHCA-v5UJmdyA&oh=00_AfdOeLAZ2QinfiRRjI6vAy9-EI6AaE7I2efAPlhGFLT7Bw&oe=68FBB6B0",
+          "postTime": "Raksuda S Suksomphet",
+          "rawTimestamp": "2025-10-20T09:13:48.084Z",
+          "query": "เบียร์",
+          "contact": {
+            "phones": [],
+            "lineIds": [],
+            "hasContact": false
+          },
+          "productInfo": {
+            "prices": [
+              1450
+            ],
+            "beerBrands": [],
+            "locations": [],
+            "deliveryMethods": []
+          },
+          "keywords": [
+            {
+              "keyword": "เบียร์",
+              "category": "beer"
+            }
+          ],
+          "timestamp": "2025-10-20T09:13:48.084Z"
+        }
+      ],
+      "lastUpdated": "2025-10-20T09:26:01.064Z"
     }
   ],
-  "failedGroups": []
+  "failedGroups": [
+    {
+      "metadata": {
+        "name": "ตู้แช่เบียร์วุ้นซื้อขายทุกจังหวัด",
+        "url": "https://www.facebook.com/groups/914679235962917/",
+        "index": 5,
+        "total": 7
+      },
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "timestamp": "2025-10-20T09:18:01.721Z"
+    },
+    {
+      "metadata": {
+        "name": "Beer Now Run Later Gang",
+        "url": "https://www.facebook.com/groups/1514529508893599/",
+        "index": 6,
+        "total": 7
+      },
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "timestamp": "2025-10-20T09:21:15.895Z"
+    },
+    {
+      "metadata": {
+        "name": "คราฟเบียร์เชียงใหม่ (Chiang Mai Craft Beer)",
+        "url": "https://www.facebook.com/groups/cnxcraftbeer/",
+        "index": 7,
+        "total": 7
+      },
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "timestamp": "2025-10-20T09:26:01.062Z"
+    }
+  ]
 }
