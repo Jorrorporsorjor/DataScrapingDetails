@@ -21,9 +21,7 @@ let scraperStatus = {
   failedRuns: 0
 };
 
-// ฟังก์ชันเรียกใช้ scraper
 function runScraper() {
-  // ถ้ายังทำงานอยู่ ข้าม
   if (scraperProcess && scraperStatus.isRunning) {
     console.log('⏭️  Scraper กำลังทำงานอยู่ ข้ามรอบนี้...');
     return;
@@ -38,9 +36,8 @@ function runScraper() {
   scraperStatus.lastStarted = new Date().toISOString();
   scraperStatus.totalRuns++;
 
-  // เรียกใช้ scraper-multi-groups.js
   scraperProcess = spawn('node', ['scraper/scraper-multi-groups.js'], {
-    stdio: 'inherit' // แสดง log ของ scraper ใน console
+    stdio: 'inherit'
   });
 
   scraperProcess.on('close', (code) => {
@@ -69,35 +66,38 @@ function runScraper() {
   });
 }
 
-// ตั้ง scheduler ทุก 30 วินาที
+// ==========================
+// ⏰ Scheduler ทุก 30 วินาที
+// ==========================
 console.log('⏰ ตั้งค่า Scheduler: รัน Scraper ทุก 30 วินาที');
 setInterval(() => {
   runScraper();
 }, 30000);
 
-// รันครั้งแรกทันที
 console.log('🎬 รัน Scraper ครั้งแรกทันที...');
 runScraper();
 
-// ✅ serve success_keyword.json
-app.get('/keywords', (req, res) => {
-  const filePath = path.join(__dirname, '..', 'output', 'success_keyword.json');
-  if (!fs.existsSync(filePath)) {
-    return res.status(404).json({ error: 'File not found' });
-  }
-  const data = fs.readFileSync(filePath, 'utf-8');
-  res.json(JSON.parse(data));
-});
+// API routes
 
-// ✅ serve all_posts_data.json
-app.get('/posts', (req, res) => {
-  const filePath = path.join(__dirname, '..', 'output', 'all_posts_data.json');
-  if (!fs.existsSync(filePath)) {
-    return res.status(404).json({ error: 'File not found' });
-  }
-  const data = fs.readFileSync(filePath, 'utf-8');
-  res.json(JSON.parse(data));
-});
+// // ✅ serve success_keyword.json
+// app.get('/keywords', (req, res) => {
+//   const filePath = path.join(__dirname, '..', 'output', 'success_keyword.json');
+//   if (!fs.existsSync(filePath)) {
+//     return res.status(404).json({ error: 'File not found' });
+//   }
+//   const data = fs.readFileSync(filePath, 'utf-8');
+//   res.json(JSON.parse(data));
+// });
+
+// // ✅ serve all_posts_data.json
+// app.get('/posts', (req, res) => {
+//   const filePath = path.join(__dirname, '..', 'output', 'all_posts_data.json');
+//   if (!fs.existsSync(filePath)) {
+//     return res.status(404).json({ error: 'File not found' });
+//   }
+//   const data = fs.readFileSync(filePath, 'utf-8');
+//   res.json(JSON.parse(data));
+// });
 
 // ✅ endpoint สถานะ scraper
 app.get('/status', (req, res) => {
@@ -108,7 +108,7 @@ app.get('/status', (req, res) => {
   });
 });
 
-// ✅ endpoint เรียกใช้ scraper แบบ manual
+// ✅ endpoint manual run scraper
 app.post('/run-scraper', (req, res) => {
   if (scraperStatus.isRunning) {
     return res.status(409).json({
@@ -124,15 +124,31 @@ app.post('/run-scraper', (req, res) => {
   });
 });
 
+app.get('/:query', (req, res) => {
+  const { query } = req.params;
+  const filePath = path.join(__dirname, '..', 'output', `${query}.json`);
+
+  if (!fs.existsSync(filePath)) {
+    return res.status(404).json({ error: `ไม่พบไฟล์ ${query}.json` });
+  }
+
+  try {
+    const data = fs.readFileSync(filePath, 'utf-8');
+    res.json(JSON.parse(data));
+  } catch (err) {
+    console.error(`❌ อ่านไฟล์ ${query}.json ล้มเหลว:`, err.message);
+    res.status(500).json({ error: `เกิดข้อผิดพลาดในการอ่านไฟล์ ${query}.json` });
+  }
+});
+
 // ✅ fallback
 app.get('/', (req, res) => {
   res.json({
     message: '✅ Scraper Server Running',
     endpoints: {
-      '/keywords': 'GET - ดึงข้อมูล keywords',
-      '/posts': 'GET - ดึงข้อมูล posts',
       '/status': 'GET - ดูสถานะ server และ scraper',
-      '/run-scraper': 'POST - รัน scraper ทันที (ถ้าไม่ได้ทำงานอยู่)'
+      '/run-scraper': 'POST - รัน scraper ทันที',
+      '/:query': 'GET - ดึงข้อมูลไฟล์ JSON ตามชื่อ เช่น /เบียร์ หรือ /ร้านค้า_failed'
     },
     scheduler: {
       interval: '30 seconds',
