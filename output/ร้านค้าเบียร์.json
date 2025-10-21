@@ -1,0 +1,132 @@
+{
+  "scrapedAt": "2025-10-21T03:32:51.533Z",
+  "query": "ร้านค้าเบียร์",
+  "status": "partial",
+  "queue": {
+    "total": 8,
+    "successful": 6,
+    "failed": 2,
+    "successRate": "75.00%"
+  },
+  "summary": {
+    "totalPosts": 24,
+    "queryFilteredPosts": 0,
+    "categoryMatchedPosts": 0,
+    "totalWithContact": 0,
+    "totalGroups": 6
+  },
+  "groups": [
+    {
+      "groupName": "ร้านค้าพฤกษา20",
+      "groupUrl": "https://www.facebook.com/groups/marketpruksa20/",
+      "query": "ร้านค้าเบียร์",
+      "scrapedAt": "2025-10-21T03:21:41.919Z",
+      "totalPosts": 1,
+      "queryFilteredPosts": 0,
+      "categoryMatchedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-21T03:32:51.533Z"
+    },
+    {
+      "groupName": "หางานกลางคืนเชียร์เบียร์,Sales โรงแรม,ร้านเหล้า/อาหารผับ,สถานบันเทิงทั่วไทย",
+      "groupUrl": "https://www.facebook.com/groups/2531033120463206/",
+      "query": "ร้านค้าเบียร์",
+      "scrapedAt": "2025-10-21T03:22:01.283Z",
+      "totalPosts": 4,
+      "queryFilteredPosts": 0,
+      "categoryMatchedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-21T03:32:51.533Z"
+    },
+    {
+      "groupName": "จองโต๊ะร้านเหล้า กรุงเทพ bkk",
+      "groupUrl": "https://www.facebook.com/groups/304760742301054/",
+      "query": "ร้านค้าเบียร์",
+      "scrapedAt": "2025-10-21T03:22:20.785Z",
+      "totalPosts": 2,
+      "queryFilteredPosts": 0,
+      "categoryMatchedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-21T03:32:51.533Z"
+    },
+    {
+      "groupName": "รวมพลคนโชห่วย-ร้านของชำ",
+      "groupUrl": "https://www.facebook.com/groups/317779888381046/",
+      "query": "ร้านค้าเบียร์",
+      "scrapedAt": "2025-10-21T03:30:07.882Z",
+      "totalPosts": 6,
+      "queryFilteredPosts": 0,
+      "categoryMatchedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-21T03:32:51.533Z"
+    },
+    {
+      "groupName": "เหล้า เบียร์ ราคาส่งพัทยา",
+      "groupUrl": "https://www.facebook.com/groups/1174807287282028/",
+      "query": "ร้านค้าเบียร์",
+      "scrapedAt": "2025-10-21T03:32:06.787Z",
+      "totalPosts": 4,
+      "queryFilteredPosts": 0,
+      "categoryMatchedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-21T03:32:51.533Z"
+    },
+    {
+      "groupName": "เบียร์ช้างและเบียร์ลีโอ",
+      "groupUrl": "https://www.facebook.com/groups/1442901699270299/",
+      "query": "ร้านค้าเบียร์",
+      "scrapedAt": "2025-10-21T03:32:51.514Z",
+      "totalPosts": 7,
+      "queryFilteredPosts": 0,
+      "categoryMatchedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-21T03:32:51.533Z"
+    }
+  ],
+  "failedGroups": [
+    {
+      "metadata": {
+        "name": "ร้านของชำ​ ร้านโชห่วย​ มินิมาร์ท​ ปลีก-ส่ง​ ทั่วไทย",
+        "url": "https://www.facebook.com/groups/1500986446908047/",
+        "index": 4,
+        "total": 8
+      },
+      "error": "Protocol error (Runtime.callFunctionOn): Execution context was destroyed.",
+      "timestamp": "2025-10-21T03:22:46.661Z"
+    },
+    {
+      "metadata": {
+        "name": "ร้านของชำ ร้านโชห่วย ร้านสะดวกซื้อ ปลีก และ ส่งทั่วไทย",
+        "url": "https://www.facebook.com/groups/903337637114940/",
+        "index": 5,
+        "total": 8
+      },
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "timestamp": "2025-10-21T03:26:01.476Z"
+    }
+  ]
+}

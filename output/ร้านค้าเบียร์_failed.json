@@ -1,0 +1,22 @@
+[
+  {
+    "metadata": {
+      "name": "ร้านของชำ​ ร้านโชห่วย​ มินิมาร์ท​ ปลีก-ส่ง​ ทั่วไทย",
+      "url": "https://www.facebook.com/groups/1500986446908047/",
+      "index": 4,
+      "total": 8
+    },
+    "error": "Protocol error (Runtime.callFunctionOn): Execution context was destroyed.",
+    "timestamp": "2025-10-21T03:22:46.661Z"
+  },
+  {
+    "metadata": {
+      "name": "ร้านของชำ ร้านโชห่วย ร้านสะดวกซื้อ ปลีก และ ส่งทั่วไทย",
+      "url": "https://www.facebook.com/groups/903337637114940/",
+      "index": 5,
+      "total": 8
+    },
+    "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+    "timestamp": "2025-10-21T03:26:01.476Z"
+  }
+]

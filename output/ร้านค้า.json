@@ -1,0 +1,191 @@
+{
+  "scrapedAt": "2025-10-21T06:48:42.904Z",
+  "query": "ร้านค้า",
+  "status": "partial",
+  "queue": {
+    "total": 8,
+    "successful": 6,
+    "failed": 2,
+    "successRate": "75.00%"
+  },
+  "summary": {
+    "totalPosts": 15,
+    "queryFilteredPosts": 1,
+    "categoryMatchedPosts": 1,
+    "totalWithContact": 1,
+    "totalGroups": 6
+  },
+  "groups": [
+    {
+      "groupName": "ร้านค้าพฤกษา20",
+      "groupUrl": "https://www.facebook.com/groups/marketpruksa20/",
+      "query": "ร้านค้า",
+      "scrapedAt": "2025-10-21T06:33:13.125Z",
+      "totalPosts": 2,
+      "queryFilteredPosts": 0,
+      "categoryMatchedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-21T06:48:42.904Z"
+    },
+    {
+      "groupName": "หางานกลางคืนเชียร์เบียร์,Sales โรงแรม,ร้านเหล้า/อาหารผับ,สถานบันเทิงทั่วไทย",
+      "groupUrl": "https://www.facebook.com/groups/2531033120463206/",
+      "query": "ร้านค้า",
+      "scrapedAt": "2025-10-21T06:33:26.787Z",
+      "totalPosts": 0,
+      "queryFilteredPosts": 0,
+      "categoryMatchedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-21T06:48:42.904Z"
+    },
+    {
+      "groupName": "จองโต๊ะร้านเหล้า กรุงเทพ bkk",
+      "groupUrl": "https://www.facebook.com/groups/304760742301054/",
+      "query": "ร้านค้า",
+      "scrapedAt": "2025-10-21T06:33:44.354Z",
+      "totalPosts": 1,
+      "queryFilteredPosts": 0,
+      "categoryMatchedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-21T06:48:42.904Z"
+    },
+    {
+      "groupName": "รวมพลคนโชห่วย-ร้านของชำ",
+      "groupUrl": "https://www.facebook.com/groups/317779888381046/",
+      "query": "ร้านค้า",
+      "scrapedAt": "2025-10-21T06:46:41.160Z",
+      "totalPosts": 1,
+      "queryFilteredPosts": 0,
+      "categoryMatchedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-21T06:48:42.904Z"
+    },
+    {
+      "groupName": "เหล้า เบียร์ ราคาส่งพัทยา",
+      "groupUrl": "https://www.facebook.com/groups/1174807287282028/",
+      "query": "ร้านค้า",
+      "scrapedAt": "2025-10-21T06:48:05.432Z",
+      "totalPosts": 4,
+      "queryFilteredPosts": 1,
+      "categoryMatchedPosts": 1,
+      "statistics": {
+        "withContact": 1,
+        "completenessRate": 100
+      },
+      "posts": [
+        {
+          "author": "Day New",
+          "authorProfileLink": "https://www.facebook.com/groups/1174807287282028/user/100042512735495/",
+          "text": "พร้อมส่งครับในพัทยา สั่งตั้งแต่ 1ลังส่งหมด ร้านบาเบียรฺ์ ร้านอาหาร ร้านเนื้อย่าง หรือร้านค้าทั่วไป นำไปขายได้ราคาดี ไลน์ไอดี hua252422",
+          "postLink": "https://www.facebook.com/groups/1174807287282028/posts/1174818403947583/?__cft__[0]=AZXw9lMa1fpFAK4-gcQFaaUI6XbxM9WtkYYIxTdX2fDocFQnBcVnZICuaeRYwbxU4E5AImfamKESOdydG6WXFvCetUAZ49ADMhSiYIGGaRvu9tOTOAP3ZboFfr4-h7LIEG1yIRvMrn3mPgHneB80ZCerMans76LSYTlN94Mm2pEvLY7eEv9tG7XH_WWJjuAtddd5oxd5TnUaPPejqLmXs0iN&__tn__=%2CO%2CP-R",
+          "imageUrl": "https://scontent.fbkk5-4.fna.fbcdn.net/v/t39.30808-6/492003158_1409839807109764_8720657427956222555_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=103&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=iEF6m5yvTkUQ7kNvwG0kDgS&_nc_oc=AdlNlK0vDXeO5gf7crlugRQbUPm0vX_l8h-SgY9s1o-1Vcz1kUimSutIMrsoh6EELhw&_nc_zt=23&_nc_ht=scontent.fbkk5-4.fna&_nc_gid=FU7ngJIXSRu_GVIcgLMQBg&oh=00_AfdhZbiSoEu7yriVr0eJp_3KCfh9AG8ShEqEW1EIvOHKXg&oe=68FCE69A",
+          "postTime": "ไม่ระบุ",
+          "rawTimestamp": "2025-10-21T06:47:19.056Z",
+          "query": "ร้านค้า",
+          "contact": {
+            "phones": [],
+            "lineIds": [
+              "hua252422"
+            ],
+            "hasContact": true
+          },
+          "productInfo": {
+            "prices": [],
+            "beerBrands": [],
+            "locations": [
+              "พัทยา"
+            ],
+            "deliveryMethods": [
+              "จัดส่ง"
+            ]
+          },
+          "keywords": [
+            {
+              "keyword": "ร้าน",
+              "category": "distributor"
+            },
+            {
+              "keyword": "ร้านค้า",
+              "category": "distributor"
+            },
+            {
+              "keyword": "ขาย",
+              "category": "selling"
+            },
+            {
+              "keyword": "พร้อมส่ง",
+              "category": "selling"
+            },
+            {
+              "keyword": "พร้อมส่ง",
+              "category": "delivery"
+            },
+            {
+              "keyword": "ราคา",
+              "category": "price"
+            },
+            {
+              "keyword": "ไลน์",
+              "category": "contact"
+            }
+          ],
+          "timestamp": "2025-10-21T06:47:19.057Z"
+        }
+      ],
+      "lastUpdated": "2025-10-21T06:48:42.904Z"
+    },
+    {
+      "groupName": "เบียร์ช้างและเบียร์ลีโอ",
+      "groupUrl": "https://www.facebook.com/groups/1442901699270299/",
+      "query": "ร้านค้า",
+      "scrapedAt": "2025-10-21T06:48:42.825Z",
+      "totalPosts": 7,
+      "queryFilteredPosts": 0,
+      "categoryMatchedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-21T06:48:42.904Z"
+    }
+  ],
+  "failedGroups": [
+    {
+      "metadata": {
+        "name": "ร้านของชำ​ ร้านโชห่วย​ มินิมาร์ท​ ปลีก-ส่ง​ ทั่วไทย",
+        "url": "https://www.facebook.com/groups/1500986446908047/",
+        "index": 4,
+        "total": 8
+      },
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "timestamp": "2025-10-21T06:39:31.068Z"
+    },
+    {
+      "metadata": {
+        "name": "ร้านของชำ ร้านโชห่วย ร้านสะดวกซื้อ ปลีก และ ส่งทั่วไทย",
+        "url": "https://www.facebook.com/groups/903337637114940/",
+        "index": 5,
+        "total": 8
+      },
+      "error": "Runtime.callFunctionOn timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.",
+      "timestamp": "2025-10-21T06:42:45.608Z"
+    }
+  ]
+}

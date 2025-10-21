@@ -14,7 +14,7 @@ services:
       - MERGE_EXISTING=true
       - MAX_HISTORY_DAYS=30
       # Groups Source (API URL)
-      - GROUPS_SOURCE=http://10.1.66.89:3002/app/groups.json
+      - GROUPS_SOURCE=http://192.168.88.186:3002/app/groups.json
       - SKIP_FIRST_GROUP=false
       # Facebook Credentials
       - FB_EMAIL=test.face112@gmail.com

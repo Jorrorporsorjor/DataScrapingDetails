@@ -1,0 +1,211 @@
+{
+  "scrapedAt": "2025-10-21T03:15:33.852Z",
+  "query": "เบียร์",
+  "status": "complete",
+  "queue": {
+    "total": 4,
+    "successful": 4,
+    "failed": 0,
+    "successRate": "100.00%"
+  },
+  "summary": {
+    "totalPosts": 15,
+    "queryFilteredPosts": 4,
+    "categoryMatchedPosts": 4,
+    "totalWithContact": 0,
+    "totalGroups": 4
+  },
+  "groups": [
+    {
+      "groupName": "คราฟเบียร์ไทยและสุราก้าวหน้า",
+      "groupUrl": "https://www.facebook.com/groups/788158899526864/",
+      "query": "เบียร์",
+      "scrapedAt": "2025-10-21T03:12:29.752Z",
+      "totalPosts": 1,
+      "queryFilteredPosts": 0,
+      "categoryMatchedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-21T03:15:33.852Z"
+    },
+    {
+      "groupName": "เบียร์ช้างและเบียร์ลีโอ",
+      "groupUrl": "https://www.facebook.com/groups/1442901699270299/",
+      "query": "เบียร์",
+      "scrapedAt": "2025-10-21T03:12:50.597Z",
+      "totalPosts": 5,
+      "queryFilteredPosts": 2,
+      "categoryMatchedPosts": 2,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [
+        {
+          "author": "Unknown",
+          "authorProfileLink": "https://www.facebook.com/groups/1442901699270299/user/100006294100838/",
+          "text": "ไม่ทราบว่าเบียร์ช้างทำมัยไม่สะอาดเลย",
+          "postLink": "https://www.facebook.com/groups/1442901699270299/posts/1466544510239351/?__cft__[0]=AZVqYOvby78UBN5FsuVfm8hOiPVTG6b72jHPnkgVeKtXCg0qN9RTCVLFKPT-ntmVA7XLtL4nRemNLu9QD5L-7A0nPa0wwq6Gpew1wQL3o1jV02adOPxmNOtSqzyPO_zFhykive0LlZbPHW_WuivkmExW9JEMckB8i5-hndJj-hL_WuKICyRm6dbokfONbYMSijmNRrw-bc4XJMIYk7tuaRdd&__tn__=%2CO%2CP-R",
+          "imageUrl": "https://scontent.fbkk5-3.fna.fbcdn.net/v/t39.30808-6/454467542_3934623743424057_7050540736429818424_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=2285d6&_nc_ohc=e7z-5u3mhJwQ7kNvwFWVcqP&_nc_oc=AdkSXHEVwLawM4P76tJm5IhurzKEzs6SAQlxKXvws4mZs2k1a73RmQjhy8aA98eA-94&_nc_zt=23&_nc_ht=scontent.fbkk5-3.fna&_nc_gid=_2w1m2WU2-gze6mww5n_0A&oh=00_AfdrNEmswpa6BxircGAWecQZf-QufhTpKmmlSJ8mc4ZbpQ&oe=68FCE0CE",
+          "postTime": "ไม่ระบุ",
+          "rawTimestamp": "2025-10-21T03:12:37.933Z",
+          "query": "เบียร์",
+          "contact": {
+            "phones": [],
+            "lineIds": [],
+            "hasContact": false
+          },
+          "productInfo": {
+            "prices": [],
+            "beerBrands": [
+              "ช้าง"
+            ],
+            "locations": [],
+            "deliveryMethods": []
+          },
+          "keywords": [
+            {
+              "keyword": "เบียร์",
+              "category": "beer"
+            },
+            {
+              "keyword": "ช้าง",
+              "category": "brands"
+            }
+          ],
+          "timestamp": "2025-10-21T03:12:37.934Z"
+        },
+        {
+          "author": "Unknown",
+          "authorProfileLink": "https://www.facebook.com/groups/1442901699270299/user/100049073943165/",
+          "text": "ไม่ทราบว่าเบียร์ช้างทำมัยไม่สะอาดเลย",
+          "postLink": "https://www.facebook.com/groups/1442901699270299/posts/1466544510239351/?comment_id=4569352113291893&__cft__[0]=AZVqYOvby78UBN5FsuVfm8hOiPVTG6b72jHPnkgVeKtXCg0qN9RTCVLFKPT-ntmVA7XLtL4nRemNLu9QD5L-7A0nPa0wwq6Gpew1wQL3o1jV02adOPxmNOtSqzyPO_zFhykive0LlZbPHW_WuivkmExW9JEMckB8i5-hndJj-hL_WuKICyRm6dbokfONbYMSijmNRrw-bc4XJMIYk7tuaRdd&__tn__=R-R",
+          "imageUrl": "",
+          "postTime": "ไม่ระบุ",
+          "rawTimestamp": "2025-10-21T03:12:37.933Z",
+          "query": "เบียร์",
+          "contact": {
+            "phones": [],
+            "lineIds": [],
+            "hasContact": false
+          },
+          "productInfo": {
+            "prices": [],
+            "beerBrands": [
+              "ช้าง"
+            ],
+            "locations": [],
+            "deliveryMethods": []
+          },
+          "keywords": [
+            {
+              "keyword": "เบียร์",
+              "category": "beer"
+            },
+            {
+              "keyword": "ช้าง",
+              "category": "brands"
+            }
+          ],
+          "timestamp": "2025-10-21T03:12:37.935Z"
+        }
+      ],
+      "lastUpdated": "2025-10-21T03:15:33.852Z"
+    },
+    {
+      "groupName": "เหล้า เบียร์ ราคาส่งพัทยา",
+      "groupUrl": "https://www.facebook.com/groups/1174807287282028/",
+      "query": "เบียร์",
+      "scrapedAt": "2025-10-21T03:13:09.059Z",
+      "totalPosts": 1,
+      "queryFilteredPosts": 0,
+      "categoryMatchedPosts": 0,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [],
+      "lastUpdated": "2025-10-21T03:15:33.852Z"
+    },
+    {
+      "groupName": "กลุ่มซื้อขาย เบียร์ช้างถัง 5 ลิตร",
+      "groupUrl": "https://www.facebook.com/groups/415770243606225/",
+      "query": "เบียร์",
+      "scrapedAt": "2025-10-21T03:15:33.833Z",
+      "totalPosts": 8,
+      "queryFilteredPosts": 2,
+      "categoryMatchedPosts": 2,
+      "statistics": {
+        "withContact": 0,
+        "completenessRate": 0
+      },
+      "posts": [
+        {
+          "author": "ฟังเข้าใจ แต่ไม่รู้สึก",
+          "authorProfileLink": "https://www.facebook.com/groups/415770243606225/user/100041936603181/",
+          "text": "โคราช อำเภอขามทะเลสอ มีไหมครับเบียร์ถัง",
+          "postLink": "https://www.facebook.com/groups/415770243606225/posts/866999968483248/?__cft__[0]=AZUleuUdwzJELj1Lug5X7BQAa4bVIZ4cH0jcrvLF1lyroMfCr_VoDvMHB_lfDwHoepntEEDqoYIj-tL9wC_PxHd-dhrRlq2Ihv81gSQAe9kAIFnBNwmmAQ6iuLAZ9bZUCZbv0rGL0meU9Ace1QGFKSFYCIi-adRHsoqWVXaKH8MatSpO5jR4uy-wQWsE8jdzi1Q&__tn__=%2CO%2CP-R",
+          "imageUrl": "",
+          "postTime": "ไม่ระบุ",
+          "rawTimestamp": "2025-10-21T03:13:25.946Z",
+          "query": "เบียร์",
+          "contact": {
+            "phones": [],
+            "lineIds": [],
+            "hasContact": false
+          },
+          "productInfo": {
+            "prices": [],
+            "beerBrands": [],
+            "locations": [
+              "โคราช"
+            ],
+            "deliveryMethods": []
+          },
+          "keywords": [
+            {
+              "keyword": "เบียร์",
+              "category": "beer"
+            }
+          ],
+          "timestamp": "2025-10-21T03:13:25.947Z"
+        },
+        {
+          "author": "Raksuda S Suksomphet",
+          "authorProfileLink": "https://www.facebook.com/groups/415770243606225/user/100063033877930/",
+          "text": "#สายปาร์ตี้ ไม่ควรพลาด พร้อมกระจายความนุ่ม ละมุน ตัวถังทำมาจาก อลูมิเนียม มีCo2 ในถัง  ถังละ 1,450- แถมฟรี กระเป๋า Ocean Bag ใส่น้ำเเข็งเเช่เบียร์ได้#อยุธย... ดูเพิ่มเติม",
+          "postLink": "https://www.facebook.com/groups/415770243606225/posts/874880874361824/?__cft__[0]=AZXd4ww27PlwogL67GR00AIjcto6djjmO0jdWWpoNDmTncmHJclbqNpYihjufvE3f3FMX8B-wzrAg79kIFguHioON_lkjhn69TYnv0iZmnLZz_4BV4gAHedktFMYAKClMrYSRRH7icL_XEWLYEOFQd15S8Ba-48E6yw7EWMjRSuKwdqMGscfKH8X-toPXU0TnF1jiIm5tldsV95J-dcCjqbH&__tn__=%2CO%2CP-R",
+          "imageUrl": "https://scontent.fbkk5-3.fna.fbcdn.net/v/t39.30808-6/480456845_957593146351806_1060574156747553766_n.jpg?stp=dst-jpg_p720x720_tt6&_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=O0W9IaoIjKIQ7kNvwH5Rp0R&_nc_oc=AdnZsPb9NK-Wcjv9AATc3W3ytrbM7tmlgeKJZQNsZXPGUPM45Doe3PCp3pJ5vthsw60&_nc_zt=23&_nc_ht=scontent.fbkk5-3.fna&_nc_gid=FEqjhi0CmkPxGozM12dnCg&oh=00_Afc2ARwCvjOtPgwBqwgpEmGEJaReAeCbH9Y7-fWr0BDQSQ&oe=68FCCFF0",
+          "postTime": "Raksuda S Suksomphet",
+          "rawTimestamp": "2025-10-21T03:14:31.740Z",
+          "query": "เบียร์",
+          "contact": {
+            "phones": [],
+            "lineIds": [],
+            "hasContact": false
+          },
+          "productInfo": {
+            "prices": [
+              1450
+            ],
+            "beerBrands": [],
+            "locations": [],
+            "deliveryMethods": []
+          },
+          "keywords": [
+            {
+              "keyword": "เบียร์",
+              "category": "beer"
+            }
+          ],
+          "timestamp": "2025-10-21T03:14:31.741Z"
+        }
+      ],
+      "lastUpdated": "2025-10-21T03:15:33.852Z"
+    }
+  ],
+  "failedGroups": []
+}
