@@ -1,5 +1,5 @@
 {
-  "scrapedAt": "2025-10-21T03:15:33.852Z",
+  "scrapedAt": "2025-10-22T02:43:19.908Z",
   "query": "เบียร์",
   "status": "complete",
   "queue": {
@@ -9,9 +9,9 @@
     "successRate": "100.00%"
   },
   "summary": {
-    "totalPosts": 15,
-    "queryFilteredPosts": 4,
-    "categoryMatchedPosts": 4,
+    "totalPosts": 14,
+    "queryFilteredPosts": 3,
+    "categoryMatchedPosts": 3,
     "totalWithContact": 0,
     "totalGroups": 4
   },
@@ -20,8 +20,8 @@
       "groupName": "คราฟเบียร์ไทยและสุราก้าวหน้า",
       "groupUrl": "https://www.facebook.com/groups/788158899526864/",
       "query": "เบียร์",
-      "scrapedAt": "2025-10-21T03:12:29.752Z",
-      "totalPosts": 1,
+      "scrapedAt": "2025-10-22T02:40:43.507Z",
+      "totalPosts": 3,
       "queryFilteredPosts": 0,
       "categoryMatchedPosts": 0,
       "statistics": {
@@ -29,55 +29,21 @@
         "completenessRate": 0
       },
       "posts": [],
-      "lastUpdated": "2025-10-21T03:15:33.852Z"
+      "lastUpdated": "2025-10-22T02:43:19.907Z"
     },
     {
       "groupName": "เบียร์ช้างและเบียร์ลีโอ",
       "groupUrl": "https://www.facebook.com/groups/1442901699270299/",
       "query": "เบียร์",
-      "scrapedAt": "2025-10-21T03:12:50.597Z",
+      "scrapedAt": "2025-10-22T02:41:05.203Z",
       "totalPosts": 5,
-      "queryFilteredPosts": 2,
-      "categoryMatchedPosts": 2,
+      "queryFilteredPosts": 1,
+      "categoryMatchedPosts": 1,
       "statistics": {
         "withContact": 0,
         "completenessRate": 0
       },
       "posts": [
-        {
-          "author": "Unknown",
-          "authorProfileLink": "https://www.facebook.com/groups/1442901699270299/user/100006294100838/",
-          "text": "ไม่ทราบว่าเบียร์ช้างทำมัยไม่สะอาดเลย",
-          "postLink": "https://www.facebook.com/groups/1442901699270299/posts/1466544510239351/?__cft__[0]=AZVqYOvby78UBN5FsuVfm8hOiPVTG6b72jHPnkgVeKtXCg0qN9RTCVLFKPT-ntmVA7XLtL4nRemNLu9QD5L-7A0nPa0wwq6Gpew1wQL3o1jV02adOPxmNOtSqzyPO_zFhykive0LlZbPHW_WuivkmExW9JEMckB8i5-hndJj-hL_WuKICyRm6dbokfONbYMSijmNRrw-bc4XJMIYk7tuaRdd&__tn__=%2CO%2CP-R",
-          "imageUrl": "https://scontent.fbkk5-3.fna.fbcdn.net/v/t39.30808-6/454467542_3934623743424057_7050540736429818424_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=2285d6&_nc_ohc=e7z-5u3mhJwQ7kNvwFWVcqP&_nc_oc=AdkSXHEVwLawM4P76tJm5IhurzKEzs6SAQlxKXvws4mZs2k1a73RmQjhy8aA98eA-94&_nc_zt=23&_nc_ht=scontent.fbkk5-3.fna&_nc_gid=_2w1m2WU2-gze6mww5n_0A&oh=00_AfdrNEmswpa6BxircGAWecQZf-QufhTpKmmlSJ8mc4ZbpQ&oe=68FCE0CE",
-          "postTime": "ไม่ระบุ",
-          "rawTimestamp": "2025-10-21T03:12:37.933Z",
-          "query": "เบียร์",
-          "contact": {
-            "phones": [],
-            "lineIds": [],
-            "hasContact": false
-          },
-          "productInfo": {
-            "prices": [],
-            "beerBrands": [
-              "ช้าง"
-            ],
-            "locations": [],
-            "deliveryMethods": []
-          },
-          "keywords": [
-            {
-              "keyword": "เบียร์",
-              "category": "beer"
-            },
-            {
-              "keyword": "ช้าง",
-              "category": "brands"
-            }
-          ],
-          "timestamp": "2025-10-21T03:12:37.934Z"
-        },
         {
           "author": "Unknown",
           "authorProfileLink": "https://www.facebook.com/groups/1442901699270299/user/100049073943165/",
@@ -113,14 +79,14 @@
           "timestamp": "2025-10-21T03:12:37.935Z"
         }
       ],
-      "lastUpdated": "2025-10-21T03:15:33.852Z"
+      "lastUpdated": "2025-10-22T02:43:19.908Z"
     },
     {
       "groupName": "เหล้า เบียร์ ราคาส่งพัทยา",
       "groupUrl": "https://www.facebook.com/groups/1174807287282028/",
       "query": "เบียร์",
-      "scrapedAt": "2025-10-21T03:13:09.059Z",
-      "totalPosts": 1,
+      "scrapedAt": "2025-10-22T02:41:24.956Z",
+      "totalPosts": 3,
       "queryFilteredPosts": 0,
       "categoryMatchedPosts": 0,
       "statistics": {
@@ -128,14 +94,14 @@
         "completenessRate": 0
       },
       "posts": [],
-      "lastUpdated": "2025-10-21T03:15:33.852Z"
+      "lastUpdated": "2025-10-22T02:43:19.908Z"
     },
     {
       "groupName": "กลุ่มซื้อขาย เบียร์ช้างถัง 5 ลิตร",
       "groupUrl": "https://www.facebook.com/groups/415770243606225/",
       "query": "เบียร์",
-      "scrapedAt": "2025-10-21T03:15:33.833Z",
-      "totalPosts": 8,
+      "scrapedAt": "2025-10-22T02:43:19.903Z",
+      "totalPosts": 3,
       "queryFilteredPosts": 2,
       "categoryMatchedPosts": 2,
       "statistics": {
@@ -204,7 +170,7 @@
           "timestamp": "2025-10-21T03:14:31.741Z"
         }
       ],
-      "lastUpdated": "2025-10-21T03:15:33.852Z"
+      "lastUpdated": "2025-10-22T02:43:19.908Z"
     }
   ],
   "failedGroups": []

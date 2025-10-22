@@ -541,18 +541,32 @@ function loadExistingData(filename) {
   return null;
 }
 
+function normalizePostLink(url) {
+  if (!url) return '';
+  try {
+    const urlObj = new URL(url);
+    return urlObj.origin + urlObj.pathname;
+  } catch (e) {
+    return url.split('?')[0];
+  }
+}
+
 function mergePosts(existingPosts, newPosts) {
   const postMap = new Map();
   
   existingPosts.forEach(post => {
     if (post.postLink) {
-      postMap.set(post.postLink, post);
+      const normalizedLink = normalizePostLink(post.postLink);
+      postMap.set(normalizedLink, post);
     }
   });
   
   newPosts.forEach(post => {
     if (post.postLink) {
-      postMap.set(post.postLink, post);
+      const normalizedLink = normalizePostLink(post.postLink);
+      if (!postMap.has(normalizedLink)) {
+        postMap.set(normalizedLink, post);
+      }
     }
   });
   
